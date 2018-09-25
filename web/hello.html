@@ -3,10 +3,54 @@
 
 <head>
     <title>Hello World!</title>
+    <style type="text/css">
+        html, body {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #main {
+            margin: auto;
+            padding: 0px;
+            height: 100%;
+        }
+
+        #helloDiv {
+            text-align: center;
+            vertical-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            color: blue;
+            font-size: 30px;
+            font-weight: normal;
+            background-color: lightgrey;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            transition: all 3s ease-in-out;
+        }
+
+        p:hover {
+            color: lightgreen;
+            font-size: 80px;
+            font-weight: bold;
+            background-color: brown;
+        }
+    </style>
 </head>
 
 <body>
-    <p>"Hello World!"</p>
+    <div id="main">
+        <div id="helloDiv">
+            <p>"Hello World!"</p>
+        </div>
+    </div>
 </body>
 
 </html>
