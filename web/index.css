@@ -1,0 +1,70 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+h1, h2 {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+#header {
+    margin: auto;
+    text-align: center;
+    vertical-align: center;
+    height: 125px;
+    padding: 0px;
+    background-color: lightgreen;
+}
+
+#schedule {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.middle {
+    position: absolute;
+    display: inline;
+    width: auto;
+    height: auto;
+    padding: 50px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.lsidebar {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 200px;
+    float: left;
+    background-color: lightgrey;
+}
+
+.rsidebar {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 200px;
+    float: right;
+    background-color: lightgrey;
+}
+
+img {
+    display: inline;
+    height: 15%;
+    width: 15%;
+}
+
+table {
+    border-collapse: collapse;
+    display: inline-table;
+}
+
+th, td {
+    border: 1px solid black;
+}
