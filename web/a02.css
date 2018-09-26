@@ -1,0 +1,93 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+h1 {
+    font-family: Calibri;
+    height: 30px;
+    padding: 0px;
+    margin: 30px;
+}
+
+p {
+    font-family: Calibri;
+    max-width: 400px;
+    width: auto;
+    margin-top: 200px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+ul {
+    position: absolute;
+    margin-top: 600px;
+    margin-left: 30px;
+}
+
+.us {
+    position: absolute;
+}
+
+.us img{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 150px;
+    width: 512px;
+    height: 770px;
+    border-radius: 50px;
+    transform: rotate(-15deg) skew(15deg) scale(.8);
+    transition: 1s;
+}
+
+.us:hover img:nth-child(5)
+{
+    transform: translate(160px, -160px) scale(.8);
+    opacity: 1;
+}
+
+.us:hover img:nth-child(4)
+{
+    transform: translate(120px, -120px) rotate(-3deg) skew(3deg) scale(.8);
+    opacity: .4;
+}
+
+.us:hover img:nth-child(3)
+{
+    transform: translate(80px, -80px) rotate(-7deg) skew(7deg) scale(.8);
+    opacity: .2;
+}
+
+.us:hover img:nth-child(2)
+{
+    transform: translate(40px, -40px) rotate(-10deg) skew(10deg) scale(.8);
+    opacity: .1;
+}
+
+.us:hover img:nth-child(1)
+{
+    transform: translate(0px, 0px) rotate(-15deg) skew(15deg) scale(.8);
+    opacity: .25;
+}
+
+span {
+    font-family: Calibri;
+    width: 200px;
+}
+
+span.us {
+    margin-left: 1200px;
+    margin-top: 350px;
+    height: auto;
+    transition: 1s;
+    opacity: 0;
+}
+
+.us:hover span {
+    transform: translate(130px);
+    transition-delay: .25s;
+    opacity: 1;
+}
