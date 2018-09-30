@@ -109,8 +109,8 @@ span {
 }
 
 #date {
-    position: relative;
-    margin-top: 20px;
+    position: absolute;
+    margin-top: 80px;
 }
 
 span.us {
