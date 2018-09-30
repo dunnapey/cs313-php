@@ -2,10 +2,12 @@
 echo
 "<!DOCTYPE html>
 <html>
+
 <head>
     <title>ABOUT ME!</title>
     <link rel='stylesheet' type='text/css' href='a02.css'>
 </head>
+
 <body>
     <a href='index.html' id='back'><</a><h1>ABOUT ME</h1>
     <p>
@@ -28,6 +30,7 @@ echo
         <span class='us'>Me and my wife, Emily</span>
     </div>
 </body>
+
 </html>";
 
 ?>
