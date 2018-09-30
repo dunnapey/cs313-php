@@ -75,24 +75,28 @@ ul {
 .us:hover img:nth-child(4)
 {
     transform: translate(120px, -120px) rotate(-3deg) skew(3deg) scale(.8);
+    transition-delay: .1s;
     opacity: .2;
 }
 
 .us:hover img:nth-child(3)
 {
     transform: translate(80px, -80px) rotate(-7deg) skew(7deg) scale(.8);
+    transition-delay: .3s;
     opacity: .1;
 }
 
 .us:hover img:nth-child(2)
 {
     transform: translate(40px, -40px) rotate(-10deg) skew(10deg) scale(.8);
+    transition-delay: .5s;
     opacity: .05;
 }
 
 .us:hover img:nth-child(1)
 {
     transform: translate(0px, 0px) rotate(-15deg) skew(15deg) scale(.8);
+    transition-delay: .7s;
     opacity: .01;
 }
 
@@ -116,5 +120,5 @@ span.us {
 }
 
 #github {
-    max-height: 20px;
+    max-height: 40px;
 }
