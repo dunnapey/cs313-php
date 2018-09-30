@@ -106,12 +106,16 @@ ul {
 
 span {
     font-family: Calibri;
-    width: 200px;
+}
+
+#date {
+    display: inline-block;
 }
 
 span.us {
     margin-left: 1200px;
     margin-top: 350px;
+    width: 200px;
     height: auto;
     transition: 1s;
     opacity: 0;
