@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    text-shadow: 10px 20px grey;
+    text-shadow: 10px 30px grey;
 }
 
 #back {
@@ -28,6 +28,7 @@ a:hover {
 
 h1 {
     font-family: Calibri;
+    display: inline-block;
     height: 30px;
     padding: 0px;
     margin: 30px;
