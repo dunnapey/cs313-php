@@ -1,5 +1,6 @@
 <?php
 
+date_default_timezone_set("US/Mountain");
 $date = date("j M Y");
 
 // $date = "$dateData[mday] $dateData[month] $dateData[year]";
