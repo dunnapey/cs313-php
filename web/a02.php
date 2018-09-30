@@ -1,8 +1,10 @@
+<?php
+echo"
 <!DOCTYPE html>
 <html>
 <head>
     <title>ABOUT ME!</title>
-    <link rel="stylesheet" type="text/css" href="a02.css">
+    <link rel='stylesheet' type='text/css' href='a02.css'>
 </head>
 <body>
     <h1>ABOUT ME</h1>
@@ -13,17 +15,19 @@
     </p>
     <ul>
         <h2>Get to Know Me:<h2>
-        <li><a href="https://www.linkedin.com/in/peyton-dunnaway">LinkedIn</a></li>
-        <li><a href="https://github.com/dunnapey/myPortfolio">GitHub</a></li>
-        <li><a href="https://www.facebook.com/peyton.dunnaway">Facebook</a></li>
+        <li><a href='https://www.linkedin.com/in/peyton-dunnaway'>LinkedIn</a></li>
+        <li><a href='https://github.com/dunnapey/myPortfolio'>GitHub</a></li>
+        <li><a href='https://www.facebook.com/peyton.dunnaway'>Facebook</a></li>
     </ul>
-    <div class="us">
-        <img src="assets/us.jpg" alt="Me and Wife">
-        <img src="assets/us.jpg" alt="Me and Wife">
-        <img src="assets/us.jpg" alt="Me and Wife">
-        <img src="assets/us.jpg" alt="Me and Wife">
-        <img src="assets/us.jpg" alt="Me and Wife">
-        <span class="us">Me and my wife, Emily</span>
+    <div class='us'>
+        <img src='assets/us.jpg' alt='Me and Wife'>
+        <img src='assets/us.jpg' alt='Me and Wife'>
+        <img src='assets/us.jpg' alt='Me and Wife'>
+        <img src='assets/us.jpg' alt='Me and Wife'>
+        <img src='assets/us.jpg' alt='Me and Wife'>
+        <span class='us'>Me and my wife, Emily</span>
     </div>
 </body>
-</html>
+</html>";
+
+?>

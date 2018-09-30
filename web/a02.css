@@ -70,7 +70,7 @@ ul {
 .us:hover img:nth-child(1)
 {
     transform: translate(0px, 0px) rotate(-15deg) skew(15deg) scale(.8);
-    opacity: .25;
+    opacity: .05;
 }
 
 span {
