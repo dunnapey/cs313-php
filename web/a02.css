@@ -114,3 +114,7 @@ span.us {
     transition-delay: .25s;
     opacity: 1;
 }
+
+#github {
+    max-height: 20px;
+}

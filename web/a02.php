@@ -21,9 +21,9 @@ echo
 
     <ul>
         <h2>Get to Know Me:<h2>
-        <li><a href='https://www.linkedin.com/in/peyton-dunnaway'><img src='assets/linkedin.png'></a></li>
-        <li><a href='https://github.com/dunnapey/myPortfolio'><img src='assets/github.png'></a></li>
-        <li><a href='https://www.facebook.com/peyton.dunnaway'><img src='assets/facebook.png'></a></li>
+        <li><a href='https://www.linkedin.com/in/peyton-dunnaway'><img alt='LinkedIn' id='linkedin' src='assets/linkedin.png'></a></li>
+        <li><a href='https://github.com/dunnapey/myPortfolio'><img alt='GitHub' id='github' src='assets/github.png'></a></li>
+        <li><a href='https://www.facebook.com/peyton.dunnaway'><img alt='Facebook' id='facebook' src='assets/facebook.png'></a></li>
     </ul>
 
     <div class='us'>
