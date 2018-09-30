@@ -1,8 +1,8 @@
 <?php
 
-$date = date(j M Y);
+$date = date("j M Y");
 
-#$date = "$dateData[mday] $dateData[month] $dateData[year]";
+// $date = "$dateData[mday] $dateData[month] $dateData[year]";
 
 echo
 "<!DOCTYPE html>
