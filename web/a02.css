@@ -6,6 +6,18 @@ html, body {
     display: flex;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-shadow: 10px;
+}
+
 h1 {
     font-family: Calibri;
     height: 30px;

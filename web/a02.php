@@ -7,7 +7,7 @@ echo
     <link rel='stylesheet' type='text/css' href='a02.css'>
 </head>
 <body>
-    <a href='index.html'>\<</a><h1>ABOUT ME</h1>
+    <a href='index.html'><</a><h1>ABOUT ME</h1>
     <p>
         My name is Peyton Dunnaway and I'm a software engineering major. I'm a Junior and am actively seeking internship opportunities for the coming year. Having dealt mostly with C++ in most of my programming classes, I'm always excited to dive more into Web Development.<br><br>
         I'm originally from Georgia, and lived in Kansas while in High School. I served a mission in Fresno, California, speaking Hmong (from Thailand area).<br><br>
