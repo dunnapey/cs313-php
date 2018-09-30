@@ -1,6 +1,6 @@
 <?php
-echo"
-<!DOCTYPE html>
+echo
+"<!DOCTYPE html>
 <html>
 <head>
     <title>ABOUT ME!</title>

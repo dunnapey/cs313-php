@@ -52,25 +52,25 @@ ul {
 .us:hover img:nth-child(4)
 {
     transform: translate(120px, -120px) rotate(-3deg) skew(3deg) scale(.8);
-    opacity: .4;
+    opacity: .2;
 }
 
 .us:hover img:nth-child(3)
 {
     transform: translate(80px, -80px) rotate(-7deg) skew(7deg) scale(.8);
-    opacity: .2;
+    opacity: .1;
 }
 
 .us:hover img:nth-child(2)
 {
     transform: translate(40px, -40px) rotate(-10deg) skew(10deg) scale(.8);
-    opacity: .1;
+    opacity: .05;
 }
 
 .us:hover img:nth-child(1)
 {
     transform: translate(0px, 0px) rotate(-15deg) skew(15deg) scale(.8);
-    opacity: .05;
+    opacity: .01;
 }
 
 span {
