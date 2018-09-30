@@ -1,6 +1,6 @@
 <?php
 
-$dateData = getDate();
+$dateData = getDate(date("U"));
 
 $date = "$dateData[mday] $dateData[month] $dateData[year]";
 
