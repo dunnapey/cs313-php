@@ -123,6 +123,10 @@ span.us {
     opacity: 1;
 }
 
+#facebook {
+    max-height: 40px;
+}
+
 #github {
     max-height: 40px;
 }

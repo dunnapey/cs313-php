@@ -1,4 +1,9 @@
 <?php
+
+$dateData = getDate();
+
+$date = "$dateData[mday], $dateData[mon] $dateData[year]";
+
 echo
 "<!DOCTYPE html>
 <html>
@@ -12,6 +17,8 @@ echo
     <div id='head'>
     <a href='index.html' id='back'><</a><h1>ABOUT ME</h1>
     </div>
+
+    <span>$date</span>
 
     <p>
         My name is Peyton Dunnaway and I'm a software engineering major. I'm a Junior and am actively seeking internship opportunities for the coming year. Having dealt mostly with C++ in most of my programming classes, I'm always excited to dive more into Web Development.<br><br>
@@ -37,7 +44,5 @@ echo
 </body>
 
 </html>";
-
-print date(YYYY/mm/dd);
 
 ?>
