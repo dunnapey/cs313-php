@@ -9,6 +9,7 @@ html, body {
 a {
     text-decoration: none;
     color: black;
+    font-family: Calibri;
 }
 
 a:hover {
