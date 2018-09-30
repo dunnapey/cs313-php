@@ -12,7 +12,11 @@ a {
     font-family: Calibri;
 }
 
-a:hover img {
+a:hover {
+    text-shadow: 5px 6px grey;
+}
+
+a img:hover {
     text-shadow: 5px 6px grey;
 }
 
