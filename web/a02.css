@@ -6,12 +6,9 @@ html, body {
     display: flex;
 }
 
-a:link {
+a {
     text-decoration: none;
-}
-
-a:visited {
-    color: black;
+    font-color: black;
 }
 
 a:hover {
