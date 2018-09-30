@@ -5,7 +5,7 @@ echo
 
 <head>
     <title>ABOUT ME!</title>
-    <link rel='stylesheet' type='text/css' href='a02.cs'>
+    <link rel='stylesheet' type='text/css' href='a02.css'>
 </head>
 
 <body>
@@ -25,7 +25,7 @@ echo
         <li><a href='https://github.com/dunnapey/myPortfolio'>GitHub</a></li>
         <li><a href='https://www.facebook.com/peyton.dunnaway'>Facebook</a></li>
     </ul>
-
+    
     <div class='us'>
         <img src='assets/us.jpg' alt='Me and Wife'>
         <img src='assets/us.jpg' alt='Me and Wife'>
