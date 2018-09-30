@@ -6,6 +6,7 @@ echo
 <head>
     <title>ABOUT ME!</title>
     <link rel='stylesheet' type='text/css' href='a02.css'>
+    <script type='text/javascript' src='https://platform.linkedin.com/badges/js/profile.js' async defer></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@ echo
 
     <ul>
         <h2>Get to Know Me:<h2>
-        <li><a href='https://www.linkedin.com/in/peyton-dunnaway'>LinkedIn</a></li>
+        <li><a href='https://www.linkedin.com/in/peyton-dunnaway'><div class='LI-profile-badge'  data-version='v1' data-size='medium' data-locale='en_US' data-type='horizontal' data-theme='light' data-vanity='peyton-dunnaway'><a class='LI-simple-link' href='https://www.linkedin.com/in/peyton-dunnaway?trk=profile-badge'>Peyton Dunnaway</a></div></a></li>
         <li><a href='https://github.com/dunnapey/myPortfolio'>GitHub</a></li>
         <li><a href='https://www.facebook.com/peyton.dunnaway'>Facebook</a></li>
     </ul>
