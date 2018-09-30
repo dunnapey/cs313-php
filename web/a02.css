@@ -6,7 +6,7 @@ html, body {
     display: flex;
 }
 
-a {
+a:link {
     text-decoration: none;
 }
 
@@ -16,6 +16,11 @@ a:visited {
 
 a:hover {
     text-shadow: 10px;
+}
+
+#back {
+    font-size: 30px;
+    display: inline-block;
 }
 
 h1 {
