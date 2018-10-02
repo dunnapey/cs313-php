@@ -1,28 +1,16 @@
-<?php
-echo "
-    <!DOCTYPE html>
+<!DOCTYPE html>
     <html>
     <head>
         <title>Team02</title>
     </head>
 
     <body>
-        <form method='post' action='<?php echo htmlspecialchars($_SERVER('PHP_SELF'];?></form>
-        Name: <input type='text' name='name'>
-        <br>
-        Email: <input type='text' name='email'>
-        <br>
-        Major: <br>
-        <input type='radio' name='major' value='Computer Science'><span>Computer Science</span><br>
-        <input type='radio' name='major' value='Web Design & Development'><span>Web Design & Development</span><br>
-         <input type='radio' name='major' value='Computer Information Technology'><span>Computer Information Technology</span><br>
-         <input type='radio' name='major' value='Computer Engineering'><span>Computer Engineering</span>
-         <br>
-        Comment: <textarea placeholder='Enter a comment:'></textarea>
-        <br>
-        <input type='submit' name='submit' value='SUBMIT'>
-    </body>
-    </html>"
+
+
+
+
+
+<?php
 
     $name = $email = $major = $comment = "";
 
@@ -40,3 +28,25 @@ echo "
       return $data;
     }
 ?>
+
+<table>
+    <tr>
+    <th>Name</th><th>Email</th><th>Major</th><th>Comment</th>
+</tr>
+    <tr>
+        <td><?php $name ?>
+    </td>
+    <td>
+        <?php $email ?>
+    </td>
+    <td>
+        <?php $major ?>
+    </td>
+    <td>
+        <?php $comment ?>
+    </td>
+</tr>
+</table>
+
+    </body>
+</html>
