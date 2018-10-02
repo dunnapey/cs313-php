@@ -31,16 +31,16 @@
 
     <tr>
         <td>
-            <?php $name ?>
+            <?php echo $name; ?>
         </td>
         <td>
-            <?php $email ?>
+            <?php echo $email; ?>
         </td>
         <td>
-            <?php $major ?>
+            <?php echo $major; ?>
         </td>
         <td>
-            <?php $comment ?>
+            <?php echo $comment; ?>
         </td>
     </tr>
 </table>
