@@ -1,15 +1,10 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Team02</title>
-    </head>
+<html>
+<head>
+    <title>Team02</title>
+</head>
 
-    <body>
-
-
-
-
-
+<body>
 <?php
 
     $name = $email = $major = $comment = "";
@@ -32,21 +27,23 @@
 <table>
     <tr>
     <th>Name</th><th>Email</th><th>Major</th><th>Comment</th>
-</tr>
+    </tr>
+
     <tr>
-        <td><?php $name ?>
-    </td>
-    <td>
-        <?php $email ?>
-    </td>
-    <td>
-        <?php $major ?>
-    </td>
-    <td>
-        <?php $comment ?>
-    </td>
-</tr>
+        <td>
+            <?php $name ?>
+        </td>
+        <td>
+            <?php $email ?>
+        </td>
+        <td>
+            <?php $major ?>
+        </td>
+        <td>
+            <?php $comment ?>
+        </td>
+    </tr>
 </table>
 
-    </body>
+</body>
 </html>
