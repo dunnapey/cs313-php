@@ -11,13 +11,14 @@
 <body>
 <?php
 
-    $name = $email = $major = $comment = "";
+    $name = $email = $major = $comment = $continents"";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $name = test_input($_POST["name"]);
         $email = test_input($_POST["email"]);
         $major = test_input($_POST["major"]);
         $comment = test_input($_POST["comment"]);
+        $continents = test_input($_POST["continents"]);
     }
 
     function test_input($data) {
@@ -45,6 +46,9 @@
         </td>
         <td>
             <?php echo $comment; ?>
+        </td>
+        <td>
+            <?php echo $continents; ?>
         </td>
     </tr>
 </table>
