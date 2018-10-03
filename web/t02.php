@@ -11,7 +11,7 @@
 <body>
 <?php
 
-    $name = $email = $major = $comment = $continents = "";
+    $name = $email = $major = $comment = "";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $name = test_input($_POST["name"]);
@@ -47,7 +47,7 @@
             <?php echo $comment; ?>
         </td>
         <td style="width: 300px;">
-            <?php $_POST["continents"]; ?>
+            <?php echo $_POST["continents"]; ?>
         </td>
     </tr>
 </table>
