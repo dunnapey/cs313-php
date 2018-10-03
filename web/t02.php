@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>Team02</title>
+    <style type="text/css">
+        td { border: 1px solid black; border-collapse: collapse; }
+    </style>
 </head>
 
 <body>
@@ -24,7 +27,7 @@
     }
 ?>
 
-<table style="border: 1px solid black; border-collapse: collapse;">
+<table>
     <tr>
     <th>Name</th><th>Email</th><th>Major</th><th>Comment</th>
     </tr>
