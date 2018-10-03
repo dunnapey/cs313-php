@@ -24,7 +24,7 @@
     }
 ?>
 
-<table>
+<table style="border: 1px solid black; border-collapse: collapse;">
     <tr>
     <th>Name</th><th>Email</th><th>Major</th><th>Comment</th>
     </tr>
