@@ -47,7 +47,9 @@
             <?php echo $comment; ?>
         </td>
         <td style="width: 300px;">
-            <?php foreach ($_POST["continents"] as $continent) echo $continent; ?>
+            <?php foreach ($_POST["continents"] as $continent) {
+                echo $continent;
+            }?>
         </td>
     </tr>
 </table>
