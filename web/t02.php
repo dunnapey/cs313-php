@@ -3,7 +3,8 @@
 <head>
     <title>Team02</title>
     <style type="text/css">
-        td { border: 1px solid black; border-collapse: collapse; }
+        td { border: 1px solid black; }
+        table { border-collapse: collapse; }
     </style>
 </head>
 
