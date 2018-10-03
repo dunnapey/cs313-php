@@ -49,7 +49,7 @@
         <td style="width: 300px;">
             <?php
                 foreach ($_POST["continents"] as $continent) {
-                    echo $continent . " ";
+                    echo $continent . ", ";
                 }
             ?>
         </td>
