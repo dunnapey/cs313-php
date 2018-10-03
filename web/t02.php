@@ -48,7 +48,7 @@
             <?php echo $comment; ?>
         </td>
         <td style="width: 300px;">
-            <?php echo $continents; ?>
+            <?php echo array_values($continents); ?>
         </td>
     </tr>
 </table>
