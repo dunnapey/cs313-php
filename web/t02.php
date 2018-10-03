@@ -11,7 +11,7 @@
 <body>
 <?php
 
-    $name = $email = $major = $comment = $continents"";
+    $name = $email = $major = $comment = $continents = "";
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $name = test_input($_POST["name"]);
@@ -31,7 +31,7 @@
 
 <table>
     <tr>
-    <th>Name</th><th>Email</th><th>Major</th><th>Comment</th>
+    <th>Name</th><th>Email</th><th>Major</th><th>Comment</th><th>Continents</th>
     </tr>
 
     <tr>
