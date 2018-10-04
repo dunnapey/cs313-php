@@ -4,7 +4,7 @@
     $user = $_SESSION["user"];
     $count = 0;
 
-    if isset($_SESSION["count"]) {
+    if (isset($_SESSION["count"])) {
         $_SESSION["count"] = $_SESSION["count"]++;
     } else {
         $_SESSION["count"] = $count;
