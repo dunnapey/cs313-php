@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $favorite = $_COOKIE["fav_text"];
+    $favorite = $_COOKIE["fav-text"];
     $user = $_SESSION["user"];
 
     if (isset($_SESSION["count"])) {
