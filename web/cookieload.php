@@ -3,7 +3,7 @@
     $favorite = $_COOKIE["fav_text"];
     $user = $_SESSION["user"];
 
-    if (isset($_SESSION["count"])) {
+    if (isset($SESSION["count"])) {
         $_SESSION["count"]++;
     } else {
         $_SESSION["count"] = 1;
