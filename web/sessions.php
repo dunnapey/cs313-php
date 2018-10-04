@@ -1,5 +1,7 @@
 <?php
-    session_start();
+    // session_start();
+
+    setcookie("fav-text", "c is for cookie", time() + (86400 * 7));
 ?>
 
 <!DOCTYPE html>
