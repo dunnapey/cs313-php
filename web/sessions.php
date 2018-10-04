@@ -1,5 +1,6 @@
 <?php
-    // session_start();
+    session_start();
+    $_SESSION["user"] = "Peyton";
 
     setcookie("fav-text", "c is for cookie", time() + (86400 * 7));
 ?>

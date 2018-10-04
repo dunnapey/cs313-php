@@ -1,5 +1,7 @@
 <?php
+    session_start();
     $favorite = $_COOKIE["fav_text"];
+    $user = $_SESSION["user"];
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +12,7 @@
 
 <body>
     <h1>LOADING COOKIE!</h1>
-    <span>Your favorite text was <?php $favorite; ?></span>
+    <span>Your favorite text was <?php echo $favorite; ?></span>
+    <span>Your username is <?php echo $user; ?></span>
 </body>
 </html>
