@@ -7,7 +7,7 @@
     if (isset($_SESSION["count"])) {
         $_SESSION["count"] = $_SESSION["count"]++;
     } else {
-        $_SESSION["count"] = $count;
+        $_SESSION["count"] = 1;
     }
 
     $visits = $_SESSION["count"];
