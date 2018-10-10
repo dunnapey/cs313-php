@@ -16,11 +16,11 @@
     </div>
 
     <div id="main">
-        <table>
-            <tr>
-                <td></td>
-            </tr>
-        </table>
+        <div class="item">
+            <img src="">
+            <button name="add">Add to Cart</button>
+        </div>
+
     </div>
 </body>
 

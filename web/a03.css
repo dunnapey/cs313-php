@@ -22,3 +22,8 @@ html, body {
     background-color: white;
     justify-content: center;
 }
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+}
