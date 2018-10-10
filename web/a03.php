@@ -6,10 +6,22 @@
 <html>
 <head>
     <title>Rare Artifacts Shop</title>
+    <link rel="stylesheet" type="text/css" href="a03.css">
 </head>
 
 <body>
-    <h1>Rare and Interesting Artifacts for Sale</h1>
+    <div id="head">
+        <h1>Rare and Interesting Artifacts for Sale</h1><br>
+        <a href="a03cart.php">My Cart</a>
+    </div>
+
+    <div id="main">
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
