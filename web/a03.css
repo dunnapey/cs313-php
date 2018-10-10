@@ -5,11 +5,13 @@ html, body {
     height: 100%;
     background-color: orange;
     display: flex;
+    flex-direction: column;
 }
 
 #head {
     width: 100%;
     height: 300px;
+    display: flex;
 }
 
 #main {
