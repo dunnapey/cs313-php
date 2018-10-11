@@ -5,7 +5,7 @@ html, body {
     height: 100%;
     background-color: orange;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -36,7 +36,7 @@ html, body {
     align-items: center;
     background-color: lightgrey;
     border: 2px solid black;
-    max-width: 50%;
+    max-width: auto;
     max-height: 400px;
 }
 
