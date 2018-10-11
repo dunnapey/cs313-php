@@ -17,10 +17,35 @@
 
     <div id="main">
         <div class="item">
+            <h3>Ark of the Covenant</h3>
             <img src="assets/ark1.jpg">
             <button name="add">Add to Cart</button>
         </div>
-
+        <div class="item">
+            <h3>Ark of the Covenant</h3>
+            <img src="assets/ark1.jpg">
+            <button name="add">Add to Cart</button>
+        </div>
+        <div class="item">
+            <h3>Ark of the Covenant</h3>
+            <img src="assets/ark1.jpg">
+            <button name="add">Add to Cart</button>
+        </div>
+        <div class="item">
+            <h3>Ark of the Covenant</h3>
+            <img src="assets/ark1.jpg">
+            <button name="add">Add to Cart</button>
+        </div>
+        <div class="item">
+            <h3>Ark of the Covenant</h3>
+            <img src="assets/ark1.jpg">
+            <button name="add">Add to Cart</button>
+        </div>
+        <div class="item">
+            <h3>Ark of the Covenant</h3>
+            <img src="assets/ark1.jpg">
+            <button name="add">Add to Cart</button>
+        </div>
     </div>
 </body>
 
