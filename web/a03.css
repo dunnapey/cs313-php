@@ -26,4 +26,7 @@ html, body {
 .item {
     display: flex;
     flex-wrap: wrap;
+    background-color: lightgrey;
+    border: 2px solid black;
+    max-width: 1fr;
 }
