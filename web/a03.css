@@ -38,6 +38,11 @@ html, body {
     max-height: 400px;
 }
 
+h3 {
+    margin: 2px;
+    padding: 0px;
+}
+
 a {
     font-weight: bold;
 }
