@@ -36,8 +36,10 @@ html, body {
 
 img {
     max-width: 300px;
+    margin: 5px;
 }
 
 button {
     max-height: 20px;
+    max-width: 80px;
 }
