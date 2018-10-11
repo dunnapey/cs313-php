@@ -29,4 +29,5 @@ html, body {
     background-color: lightgrey;
     border: 2px solid black;
     max-width: 1fr;
+    max-height: 400px;
 }
