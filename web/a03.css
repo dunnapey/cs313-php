@@ -21,6 +21,7 @@ html, body {
     height: 1400px;
     background-color: white;
     justify-content: center;
+    margin: 20%;
 }
 
 .item {
@@ -30,4 +31,8 @@ html, body {
     border: 2px solid black;
     max-width: 1fr;
     max-height: 400px;
+}
+
+button {
+    max-height: 16px;
 }
