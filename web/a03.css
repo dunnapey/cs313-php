@@ -28,6 +28,7 @@ html, body {
 .item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: lightgrey;
     border: 2px solid black;
     max-width: 50%;
@@ -41,5 +42,5 @@ img {
 
 button {
     max-height: 20px;
-    max-width: 80px;
+    max-width: 100px;
 }
