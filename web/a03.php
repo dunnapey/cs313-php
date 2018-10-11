@@ -17,7 +17,7 @@
 
     <div id="main">
         <div class="item">
-            <img src="">
+            <img src="assets/ark1.jpg">
             <button name="add">Add to Cart</button>
         </div>
 
