@@ -23,7 +23,7 @@
         </div>
         <div class="item">
             <h3>Invisibility Cloak</h3>
-            <img src="assets/cloak.jpg">
+            <img src="assets/cloak.png">
             <button name="add">Add to Cart</button>
         </div>
         <div class="item">
@@ -58,7 +58,7 @@
         </div>
         <div class="item">
             <h3>Awesome Laser Sword</h3>
-            <img src="assets/saber.jpg">
+            <img src="assets/saber.png">
             <button name="add">Add to Cart</button>
         </div>
         <div class="item">
