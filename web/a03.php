@@ -1,19 +1,17 @@
 <?php
     session_start();
 
-    $items = $_SESSION['cart'];
-
-    $ark = 10000;
-    $cloak = 5000;
-    $diary = 1000;
+    $ark = 100000;
+    $cloak = 50000;
+    $diary = 8000;
     $dino = 500;
-    $geiger = 400;
-    $orb = 7000;
-    $plates = 8000;
-    $ring = 3000;
-    $saber = 4000;
+    $geiger = 4000;
+    $orb = 70000;
+    $plates = 80000;
+    $ring = 30000;
+    $saber = 40000;
     $skull = 20000;
-    $stone = 2000;
+    $stone = 10000;
     $toothpaste = 1000000;
 ?>
 
@@ -31,12 +29,12 @@
     </div>
 
     <div id="main">
-        <form action="addtocart.php">
+        <form action="addtocart.php" method="post">
             <div class="item">
                 <h3>Ark of the Covenant</h3>
                 <img src="assets/ark1.jpg">
                 <?php echo "<span>Price - \$$ark</span>"; ?>
-                <button name="add" value="ark">Add to Cart</button>
+                <input type="submit" name="add" value="ark">Add to Cart</input>
             </div>
             <div class="item">
                 <h3>Invisibility Cloak</h3>

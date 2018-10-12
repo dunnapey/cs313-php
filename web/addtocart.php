@@ -1,9 +1,13 @@
 <?php
     session_start();
-    if(isset($_SESSION['cart']) & !empty($SESSION['cart']))
+
+    if(isset($_POST['add']) & !empty($_POST['add']))
     {
-        $items = $SESSION['cart'];
-        $cartitems = explode(",", $items);
-        $_SESSION['cart'] = $items;
+        $item = $_POST['add'];
+        array_push($_SESSION['cart'], $item);
+    }
+
+    function addItem($name, $price) {
+        array_push($items, $name => $price);
     }
 ?>
