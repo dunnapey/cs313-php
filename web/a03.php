@@ -35,7 +35,7 @@
             <div class="item">
                 <h3>Ark of the Covenant</h3>
                 <img src="assets/ark1.jpg">
-                <?php echo '<span>Price - \$$ark</span>' ?>
+                <?php echo '<span>Price - \$$ark</span>'; ?>
                 <button name="add" value="ark">Add to Cart</button>
             </div>
             <div class="item">
