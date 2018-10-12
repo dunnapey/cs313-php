@@ -3,9 +3,9 @@
 
     $items = $_SESSION['cart'];
 
-    $ark = 10,000;
-    $cloak = 5,000;
-    $diary = 1,000;
+    $ark = 10000;
+    $cloak = 5000;
+    $diary = 1000;
     $dino = 500;
     $geiger = 400;
     $orb = 7000;
