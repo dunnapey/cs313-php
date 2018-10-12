@@ -19,6 +19,7 @@
         <div class="item">
             <h3>Ark of the Covenant</h3>
             <img src="assets/ark1.jpg">
+            <span>Price - $</span>
             <button name="add">Add to Cart</button>
         </div>
         <div class="item">
@@ -69,11 +70,6 @@
         <div class="item">
             <h3>Seer Stone</h3>
             <img src="assets/stone.jpg">
-            <button name="add">Add to Cart</button>
-        </div>
-        <div class="item">
-            <h3>Ten Commandment Tablets</h3>
-            <img src="assets/tablets.jpg">
             <button name="add">Add to Cart</button>
         </div>
         <div class="item">

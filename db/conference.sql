@@ -27,3 +27,9 @@ CREATE TABLE notes
     , speaker_id INT NOT NULL REFERENCES speakers(id)
     , session_id INT NOT NULL REFERENCES sessions(id)
 );
+
+INSERT INTO users (username, password) VALUES
+('Peyton', 'dunnapey')
+, ('Mike', 'wazowskee')
+, ('Shabalabba', 'dingdong');
+
