@@ -34,7 +34,7 @@
             <img src="assets/ark1.jpg">
             <?php echo "<span>Price - \$$ark</span>"; ?>
             <form action="addtocart.php" method="post">
-                <input type="submit" name="add[]" value="ark">Add to Cart</input>
+                <input type="submit" name="add[]" value="Add to Cart"></input>
             </form>
         </div>
         <div class="item">
