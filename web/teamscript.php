@@ -1,3 +1,9 @@
+<html>
+<head>
+    <title>Awesome</title>
+</head>
+<body>
+
 <?php
     $user = 'postgres';
     $pwd = 'hmooBhwJchiM';
@@ -20,3 +26,5 @@
         echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - ' . '\"' . $row['content'] . '\"<br>';
     }
 ?>
+</body>
+</html>
