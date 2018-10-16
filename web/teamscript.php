@@ -18,7 +18,7 @@
     $dbPwd = $dbOpts['pass'];
     $dbName = ltrim($dbOpts['path'], '/');
 
-    $db = new PDO("psql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPwd);
+    $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPwd);
 
     echo "<h1>Scriptures Resources</h1><br>";
 
