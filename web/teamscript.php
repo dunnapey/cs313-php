@@ -4,10 +4,17 @@
 </head>
 <body>
 
+    <form action="">
+        <input type="text" name="submit" placeholder="Insert value here"/><input type="submit" value="searchValue" value="Search"/> 
+    </body>
+
 <?php
     // $user = 'postgres';
     // $pwd = 'hmooBhwJchiM';
     // $db = new PDO('psql:host=localhost;dbname=localtestdb', $user, $pwd);
+
+    $val = $_POST['submit'];
+    
     try
     {
         $dburl = getenv('DATABASE_URL');
@@ -22,7 +29,7 @@
 
         echo "<h1>Scriptures Resources</h1><br>";
 
-        foreach ($db->query('SELECT * FROM scriptures;') as $row) {
+        foreach ($db->query('SELECT * FROM scriptures WHERE $row['book'] == $val;') as $row) {
             echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - ' . '\"' . $row['content'] . '\"<br>';
         }
     }
