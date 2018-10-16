@@ -10,7 +10,7 @@
     // $db = new PDO('psql:host=localhost;dbname=localtestdb', $user, $pwd);
     try
     {
-        $dburl = getend('DATABASE_URL');
+        $dburl = getenv('DATABASE_URL');
         $dbOpts = parse_url($dburl);
         $dbHost = $dbOpts['host'];
         $dbPort = $dbOpts['port'];
