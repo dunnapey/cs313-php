@@ -6,7 +6,7 @@
 
     <form action="" method="post">
         <input type="text" name="submit" placeholder="Insert value here"/><input type="submit" value="searchValue" value="Search"/> 
-    </body>
+    </form>
 
 <?php
     // $user = 'postgres';
