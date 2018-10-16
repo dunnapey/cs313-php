@@ -14,6 +14,8 @@
     // $db = new PDO('psql:host=localhost;dbname=localtestdb', $user, $pwd);
 
     $val = $_POST['submit'];
+
+    var_dump($_POST);
     
     try
     {
