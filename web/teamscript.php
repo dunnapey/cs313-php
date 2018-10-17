@@ -9,9 +9,6 @@
     </form>
 
 <?php
-    // $user = 'postgres';
-    // $pwd = 'hmooBhwJchiM';
-    // $db = new PDO('psql:host=localhost;dbname=localtestdb', $user, $pwd);
 
     $val = $_POST['submit'];
 
@@ -29,10 +26,10 @@
 
         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPwd);
 
-        echo "<h1>Scriptures Resources</h1><br>";
+        echo "<h1>Scriptures Resources</h1><br><hr>";
 
-        foreach ($db->query('SELECT book FROM scriptures WHERE book = ' . $val . ';') as $row) {
-            echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - ' . '\"' . $row['content'] . '\"<br>';
+        foreach ($db->query("SELECT book FROM scriptures WHERE book = $val;") as $row) {
+            echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - ' . "\"" . $row['content'] . "\"<br>";
         }
     }
     catch(PDOException $ex)
