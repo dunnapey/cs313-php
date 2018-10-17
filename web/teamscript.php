@@ -26,9 +26,9 @@
 
         $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPwd);
 
-        echo "<h1>Scriptures Resources</h1><br><hr>";
+        echo "<h1>Scriptures Resources</h1><hr>";
 
-        foreach ($db->query("SELECT book FROM scriptures WHERE book = $val;") as $row) {
+        foreach ($db->query("SELECT book FROM scriptures WHERE book = '$val'") as $row) {
             echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - ' . "\"" . $row['content'] . "\"<br>";
         }
     }
