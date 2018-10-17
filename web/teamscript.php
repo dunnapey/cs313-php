@@ -9,10 +9,8 @@
     </form>
 
 <?php
-
+    $val = '';
     $val = $_POST['submit'];
-
-    echo $val;
     
     try
     {
