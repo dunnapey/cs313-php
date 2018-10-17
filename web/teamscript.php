@@ -28,7 +28,7 @@
 
         echo "<h1>Scriptures Resources</h1><hr>";
 
-        foreach ($db->query("SELECT book FROM scriptures WHERE book = '$val'") as $row) {
+        foreach ($db->query("SELECT * FROM scriptures WHERE book = '$val'") as $row) {
             echo '<b>' . $row['book'] . ' ' . $row['chapter'] . ':' . $row['verse'] . '</b> - ' . "\"" . $row['content'] . "\"<br>";
         }
     }
