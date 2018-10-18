@@ -16,7 +16,7 @@
     }
     catch(PDOException $ex)
     {
-        echo 'Error!: ' . %ex->getMessage();
+        echo 'Error!: ' . $ex->getMessage();
         die();
     }
 
