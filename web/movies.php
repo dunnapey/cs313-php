@@ -21,7 +21,7 @@
     }
 
     //QUERY
-    $query = $db->prepare('SELECT id, title, year FROM movie');
+    $query = $db->prepare('SELECT id, title, year FROM movies');
     $query->execute();
     $movies = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
