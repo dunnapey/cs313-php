@@ -2,8 +2,49 @@
 <html>
 <head>
     <title>a04</title>
+    <link rel="icon" type="image/png" href="assets/favicon2.png">
+    <style type="text/css">
+        div {
+            border: 1px solid black;
+            background-color: lightgreen;
+            display: table;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>COMING SOON!</h1>
+    <h1>SQL DB Project CREATE TABLE Scripts</h1>
+    <div>
+    <code>
+        <pre>
+        CREATE TABLE users
+        (
+            id SERIAL PRIMARY KEY
+            , username VARCHAR(50) UNIQUE NOT NULL
+            , password VARCHAR(50) NOT NULL
+            , phone NUMERIC(10) UNIQUE NOT NULL
+            , class_id INT REFERENCES classes(id)
+            , pay_id INT REFERENCES paymethods(id)
+        );
+
+        CREATE TABLE classes
+        (
+            id SERIAL PRIMARY KEY
+            , name VARCHAR(100) UNIQUE NOT NULL
+            , cost SMALLINT NOT NULL
+            , studentCount SMALLINT NOT NULL
+        );
+
+        CREATE TABLE paymethods
+        (
+            id SERIAL PRIMARY KEY
+            , name VARCHAR(50) UNIQUE NOT NULL
+        );
+
+        INSERT INTO users (username, password, phone, class_id, pay_id) VALUES
+        ();
+        </pre>
+    </code>
+    </div>
 </body>
 </html>
