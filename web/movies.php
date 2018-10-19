@@ -29,6 +29,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
     <title>Movies</title>
 </head>
 
