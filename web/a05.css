@@ -6,7 +6,7 @@ html, body {
     background-color: lightblue;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: vertical;
+    flex-direction: column;
     justify-content: center;
 }
 
