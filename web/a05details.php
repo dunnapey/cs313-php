@@ -4,7 +4,7 @@
 	$id = $_GET['id'];
 
 	//QUERY
-	$query = $db->prepare('SELECT fname, lname FROM users WHERE class_id = $id');
+	$query = $db->prepare("SELECT fname, lname FROM users WHERE class_id = '$id'");
 	$query->execute();
 	$students = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
