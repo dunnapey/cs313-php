@@ -7,16 +7,21 @@ html, body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
 table {
     margin: 5px;
     border: 1px solid black;
     border-collapse: collapse;
+    width: fit-content;
 }
 
 td {
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+ul {
+    width: fit-content;
 }
