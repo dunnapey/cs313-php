@@ -23,7 +23,7 @@
                 $name = $class['name'];
                 $cost = $class['cost'];
                 $class_id = $class['id'];
-                echo "<li><a href='a05details.php?id=$class_id'>$name ($cost)</a></li>";
+                echo "<li><a href='a05details.php?id=<php echo $class_id; ?>'>$name ($cost)</a></li>";
             }
         ?>
     </ul>
