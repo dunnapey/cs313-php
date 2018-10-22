@@ -12,6 +12,7 @@
 <head>
     <title>a05</title>
     <link rel="icon" type="image/png" href="assets/favicon2.png">
+    <link rel="stylesheet" type="text/css" href="a05.css">
 </head>
 
 <body>
