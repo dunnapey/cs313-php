@@ -20,7 +20,10 @@
     <ul>
         <?php
             foreach ($classes as $class) {
-                echo "<li><a href='a05details.php?id=$class['id']'>$class['name'] ($class['cost'])</a></li>";
+                $id = $class['id'];
+                $name = $class['name'];
+                $cost = $class['cost'];
+                echo "<li><a href='a05details.php?id=$id'>$name ($cost)</a></li>";
             }
         ?>
     </ul>
