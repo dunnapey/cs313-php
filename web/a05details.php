@@ -19,6 +19,7 @@
 </head>
 
 <body>
+	<h1>Students Enrolled</h1>
 	<table>
 		<th>Students</th>
 		<?php
