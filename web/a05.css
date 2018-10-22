@@ -6,10 +6,17 @@ html, body {
     background-color: lightblue;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: vertical;
     justify-content: center;
 }
 
-table, td {
+table {
+    margin: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
     border: 1px solid black;
     border-collapse: collapse;
 }
