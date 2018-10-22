@@ -1,7 +1,7 @@
 <?php
 	require 'herokudb.php';
 
-	$id = $_GET['id'];
+	$id = $_GET['class_id'];
 
 	//QUERY
 	$query = $db->prepare("SELECT fname, lname FROM users WHERE class_id = ?");
