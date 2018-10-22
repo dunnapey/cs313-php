@@ -2,7 +2,7 @@
     require 'herokudb.php';
 
     //QUERY
-    $query = $db->prepare('SELECT name, cost FROM classes');
+    $query = $db->prepare('SELECT id, name, cost FROM classes');
     $query->execute();
     $classes = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
