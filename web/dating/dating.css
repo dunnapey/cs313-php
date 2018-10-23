@@ -16,14 +16,17 @@ a {
     text-decoration: none;
 }
 
+#nav {
+    margin-left: 10px;
+}
+
 #nav a {
-    padding: 5px;
-    background-color: pink;
-    height: 20px;
+    padding: 5px 5px 0px 5px;
+    background-color: red;
 }
 
 #nav a:hover {
-    height: 22px;
+    padding-top: 8px;
 }
 
 #head {
