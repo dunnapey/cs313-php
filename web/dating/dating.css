@@ -1,0 +1,40 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: tan;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-family: Calibri;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#nav a {
+    padding: 5px;
+    background-color: pink;
+    height: 20px;
+}
+
+#nav a:hover {
+    height: 22px;
+}
+
+header {
+    background-color: black;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+}
