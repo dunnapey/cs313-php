@@ -6,17 +6,21 @@
 <html>
 <head>
     <title>Make It Great</title>
-    <link rel="icon" type="image/png" href="assets/favicon2.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- viewPort width adjusts for mobile device sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/png" href="../assets/favicon2.png">
     <link rel="stylesheet" type="text/css" href="dating.css">
 </head>
 
 <body>
-    <div id="head"><?php require 'header.html'; ?></div>
+    <?php require 'header.html'; ?>
 
     <div id="main">
         <h2>Dating Coaching Services</h2>
     </div>
 
-    <div id="foot"><?php require 'footer.html'; ?></div>
+    <?php require 'footer.html'; ?>
 </body>
 </html>
