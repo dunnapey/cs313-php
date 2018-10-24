@@ -12,6 +12,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" href="../assets/favicon2.png">
     <link rel="stylesheet" type="text/css" href="dating.css">
+    <script type="text/javascript">
+        document.getElementById("contact").className = "active";
+    </script>
 </head>
 
 <body>
