@@ -20,7 +20,7 @@ a {
     margin-left: 10px;
 }
 
-.active {
+#nav a.active {
     padding-top: 8px;
     background-color: lightseagreen;
 }
