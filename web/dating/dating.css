@@ -20,6 +20,11 @@ a {
     margin-left: 10px;
 }
 
+.active {
+    padding-top: 8px;
+    background-color: lightseagreen;
+}
+
 #nav a {
     border-radius: 5px 5px 0px 0px;
     padding: 5px 5px 0px 5px;
@@ -28,11 +33,6 @@ a {
 
 #nav a:hover {
     padding-top: 8px;
-}
-
-.active {
-    padding-top: 8px;
-    background-color: lightseagreen;
 }
 
 #head {
