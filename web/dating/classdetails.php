@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    require 'herokudb.php';
+    require '../herokudb.php';
 
     $id = $_GET['id'];
 
