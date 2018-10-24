@@ -76,7 +76,7 @@ form {
     align-items: center;
 }
 
-[type = submit] {
+input[type = submit] {
     margin-top: 5px;
 }
 
