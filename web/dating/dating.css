@@ -21,12 +21,18 @@ a {
 }
 
 #nav a {
+    border-radius: 
     padding: 5px 5px 0px 5px;
     background-color: red;
 }
 
 #nav a:hover {
     padding-top: 8px;
+}
+
+#nav a:active {
+    padding-top: 8px;
+    background-color: lightseagreen;
 }
 
 #head {
