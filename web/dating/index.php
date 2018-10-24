@@ -12,13 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" href="../assets/favicon2.png">
     <link rel="stylesheet" type="text/css" href="dating.css">
-    <script type="text/javascript">
-        document.getElementById("home").className = "active";
-    </script>
 </head>
 
 <body>
     <?php require 'header.html'; ?>
+    <script type="text/javascript">
+        document.getElementById("home").className = "active";
+    </script>
 
     <div id="main">
         <h2>Dating Coaching Services</h2>
