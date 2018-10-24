@@ -1,5 +1,12 @@
 <?php
     session_start();
+
+    require '../herokudb.php';
+
+    //QUERY
+    $query = $db->prepare('SELECT id, name, cost FROM classes');
+    $query->execute();
+    $classes = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +29,16 @@
 
     <div id="main">
         <h2>Classes Available</h2>
+        <ul>
+            <?php
+                foreach ($classes as $class) {
+                    $id = $class['id'];
+                    $name = $class['name'];
+                    $cost = $class['cost'];
+                    echo "<li><a href='classdetails.php?id=$id'>$name (\$$cost)</a></li>";
+                }
+            ?>
+        </ul>
     </div>
 
     <div id="foot"><?php require 'footer.html'; ?></div>

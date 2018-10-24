@@ -1,5 +1,15 @@
 <?php
     session_start();
+
+    require 'herokudb.php';
+
+    $id = $_GET['id'];
+
+    //QUERY
+    $query = $db->prepare("SELECT fname, lname FROM users WHERE class_id = :id");
+    $query->bindParam(':id', $id);
+    $query->execute();
+    $students = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +32,21 @@
 
     <div id="main">
         <h2>Class Details</h2>
+        <table>
+            <th>Students Enrolled:</th>
+            <?php
+                if (empty($students))
+                    echo "<tr><td>No students in this class yet</td></tr>";
+                else
+                {
+                    foreach ($students as $student) {
+                        $fname = $student['fname'];
+                        $lname = $student['lname'];
+                        echo "<tr><td>$fname $lname</td></tr>";
+                    }
+                }
+            ?>
+        </table>
     </div>
 
     <div id="foot"><?php require 'footer.html'; ?></div>
