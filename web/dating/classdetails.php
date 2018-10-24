@@ -47,6 +47,7 @@
                 }
             ?>
         </table>
+        <a href="register.php?id=$id">REGISTER FOR THIS CLASS</a>
     </div>
 
     <?php require 'footer.html'; ?>

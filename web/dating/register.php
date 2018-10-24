@@ -2,6 +2,8 @@
     session_start();
 
     require '../herokudb.php';
+
+    $id = $_GET['id'];
 ?>
 
 <!DOCTYPE html>
@@ -17,15 +19,22 @@
 </head>
 
 <body>
-    <div id="head"><?php require 'header.html'; ?></div>
+    <?php require 'header.html'; ?>
     <script type="text/javascript">
         document.getElementById("classes").className = "active";
     </script>
 
     <div id="main">
         <h2>Sign Up for a Class</h2>
+        <form>
+            First Name: <input type="text" name="fname">
+            Last Name: <input type="text" name="lname">
+            Username: <input type="text" name="uname">
+            Email: <input type="text" name="email">
+            <input type="submit" name="submit" value="SUBMIT">
+        </form>
     </div>
 
-    <div id="foot"><?php require 'footer.html'; ?></div>
+    <?php require 'footer.html'; ?>
 </body>
 </html>
