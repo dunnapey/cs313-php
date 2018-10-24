@@ -30,7 +30,7 @@ a {
     padding-top: 8px;
 }
 
-#nav a:active {
+#nav a .active {
     padding-top: 8px;
     background-color: lightseagreen;
 }
