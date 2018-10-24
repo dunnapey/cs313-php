@@ -22,6 +22,12 @@
 
     <div id="main">
         <h2>Dating Coaching Services</h2>
+        <p>
+            MakeItGreat.com is here to help you develop your relationships and love-life so that you can truly enjoy yourself and those you devote your time and self to.
+        </p>
+        <p>
+            More to come...
+        </p>
     </div>
 
     <?php require 'footer.html'; ?>
