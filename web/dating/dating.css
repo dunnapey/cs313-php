@@ -55,6 +55,7 @@ html, body {
 
 #main a {
     color: black;
+    text-decoration: none;
 }
 
 table {
@@ -80,4 +81,5 @@ td {
 
 #foot a {
     color: white;
+    text-decoration: none;
 }

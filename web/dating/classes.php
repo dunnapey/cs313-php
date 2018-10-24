@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div id="head"><?php require 'header.html'; ?></div>
+    <?php require 'header.html'; ?>
     <script type="text/javascript">
         document.getElementById("classes").className = "active";
     </script>
@@ -41,6 +41,6 @@
         </ul>
     </div>
 
-    <div id="foot"><?php require 'footer.html'; ?></div>
+    <?php require 'footer.html'; ?>
 </body>
 </html>
