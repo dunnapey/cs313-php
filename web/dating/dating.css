@@ -57,11 +57,27 @@ html, body {
     color: black;
 }
 
+table {
+    margin: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: fit-content;
+}
+
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
 #foot {
     background-color: black;
     text-align: center;
     width: 100%;
     position: absolute;
     bottom: 0px;
+    color: white;
+}
+
+#foot a {
     color: white;
 }
