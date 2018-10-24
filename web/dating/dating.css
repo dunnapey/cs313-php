@@ -76,6 +76,10 @@ form {
     align-items: center;
 }
 
+[type = submit] {
+    margin-top: 5px;
+}
+
 #foot {
     background-color: black;
     text-align: center;
