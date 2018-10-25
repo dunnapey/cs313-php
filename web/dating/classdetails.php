@@ -6,31 +6,26 @@
     $id = $_GET['id'];
 
     //QUERY
-    $query = $db->prepare("SELECT fname, lname FROM users WHERE class_id = :id");
-    $query->bindParam(':id', $id);
+    $query = $db->prepare("SELECT fname, lname FROM users WHERE class_id = :class");
+    $query->bindParam(':class', $id);
     $query->execute();
     $students = $query->fetchAll(PDO::FETCH_ASSOC);
 
     //REGISTER STUDENT IN CURRENT CLASS
     if (isset($_POST))
     {
-        $insert = $db->prepare("INSERT INTO users (username, fName, lName, password, email) VALUES
-            (:user, :fname, :lname, :pwd, :email);");
-
+        //INSERT NEW USER
+        $insert = $db->prepare("INSERT INTO users (username, fName, lName, password, email) VALUES (:user, :fname, :lname, :pwd, :email);");
         $insert->bindParam(':user', $_POST['uname']);
         $insert->bindParam(':fname', $_POST['fname']);
         $insert->bindParam('::lname', $_POST['lname']);
         $insert->bindParam(':pwd', $_POST['pwd']);
         $insert->bindParam(':email', $_POST['email']);
-
-        //INSERT USER
         $insert->execute();
 
         //INSERT CLASSUSER RELATION
         $lastId = $db->lastInsertId();
-        $insertClass = $db->prepare("INSERT INTO classesusers (user_id, class_id) VALUES
-            (:user, :class);");
-
+        $insertClass = $db->prepare("INSERT INTO classesusers (user_id, class_id) VALUES (:user, :class);");
         $insertClass->bindParam(':user', $lastId);
         $insertClass->bindParam(':class', $id);
         $insertClass->execute();
