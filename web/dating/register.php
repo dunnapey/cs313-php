@@ -26,12 +26,13 @@
 
     <div id="main">
         <h2>Sign Up for a Class</h2>
-        <form action="classdetails.php?id=<?php echo $id; ?>" method="post">
+        <form action="classdetails.php" method="post">
             First Name: <input type="text" name="fname">
             Last Name: <input type="text" name="lname">
             Username: <input type="text" name="uname">
             Password: <input type="text" name="pwd">
             Email: <input type="text" name="email">
+            <input type="hidden" name="class" value="<?php echo $id; ?>">
             <input type="submit" name="submit" value="SUBMIT">
         </form>
     </div>

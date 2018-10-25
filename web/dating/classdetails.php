@@ -28,7 +28,7 @@
         $lastId = $db->lastInsertId();
         $insertClass = $db->prepare("INSERT INTO classesusers (user_id, class_id) VALUES (:user, :class);");
         $insertClass->bindParam(':user', $lastId);
-        $insertClass->bindParam(':class', $id);
+        $insertClass->bindParam(':class', $_POST['class']);
         $insertClass->execute();
     }
 ?>
