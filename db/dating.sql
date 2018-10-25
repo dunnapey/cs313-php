@@ -5,8 +5,13 @@ CREATE TABLE users
     , fName VARCHAR(50) NOT NULL
     , lName VARCHAR(50) NOT NULL
     , password VARCHAR(50) NOT NULL
-    , phone NUMERIC(10) UNIQUE NOT NULL
-    , class_id INT REFERENCES classes(id)
+    , email VARCHAR(50) UNIQUE NOT NULL
+);
+
+CREATE TABLE classesusers
+(
+    user_id INT REFERENCES users(id) NOT NULL
+    , class_id SMALLINT REFERENCES classes(id) NOT NULL
 );
 
 CREATE TABLE classes
@@ -24,12 +29,22 @@ INSERT INTO classes (name, cost) VALUES
 ('Intimacy', 40),
 ('Full Course', 75);
 
-INSERT INTO users (username, fName, lName, password, phone, class_id) VALUES
-('user1', 'fname1', 'lname2', 'password1', 1234567890, 1),
-('user2', 'fname2', 'lname2', 'password2', 2345678901, 2),
-('user3', 'fname3', 'lname3', 'password3', 3456789012, 3),
-('user4', 'fname4', 'lname4', 'password4', 4567890123, 1),
-('user5', 'fname5', 'lname5', 'password5', 5678901234, 2),
-('user6', 'fname6', 'lname6', 'password6', 6789012345, 3),
-('user7', 'fname7', 'lname7', 'password7', 7890123456, 2),
-('user8', 'fname8', 'lname8', 'password8', 8901234567, 6);
+INSERT INTO users (username, fName, lName, password, email) VALUES
+('user1', 'fname1', 'lname2', 'password1', 'email1@gmail.com'),
+('user2', 'fname2', 'lname2', 'password2', 'email2@gmail.com'),
+('user3', 'fname3', 'lname3', 'password3', 'email3@gmail.com'),
+('user4', 'fname4', 'lname4', 'password4', 'email4@gmail.com'),
+('user5', 'fname5', 'lname5', 'password5', 'email5@gmail.com'),
+('user6', 'fname6', 'lname6', 'password6', 'email6@gmail.com'),
+('user7', 'fname7', 'lname7', 'password7', 'email7@gmail.com'),
+('user8', 'fname8', 'lname8', 'password8', 'email8@gmail.com');
+
+INSERT INTO classesusers (user_id, class_id) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 1),
+(5, 2),
+(6, 3),
+(7, 2),
+(8, 6);
