@@ -3,7 +3,7 @@
 
     require '../herokudb.php';
 
-    $id = $_GET['id'];
+    $id = htmlspecialchars($_GET['id']);
 
     //QUERY
     $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
@@ -19,7 +19,7 @@
         $insert = $db->prepare("INSERT INTO users (username, fName, lName, password, email) VALUES (:user, :fname, :lname, :pwd, :email);");
         $insert->bindParam(':user', $_POST['uname']);
         $insert->bindParam(':fname', $_POST['fname']);
-        $insert->bindParam('::lname', $_POST['lname']);
+        $insert->bindParam(':lname', $_POST['lname']);
         $insert->bindParam(':pwd', $_POST['pwd']);
         $insert->bindParam(':email', $_POST['email']);
         $insert->execute();
