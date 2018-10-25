@@ -12,7 +12,7 @@
     $students = $query->fetchAll(PDO::FETCH_ASSOC);
 
     //REGISTER STUDENT IN CURRENT CLASS
-    if (isset($_POST))
+    if (!empty($_POST))
     {
         //INSERT NEW USER
         $insert = $db->prepare("INSERT INTO users (username, fName, lName, password, email) VALUES (:user, :fname, :lname, :pwd, :email);");
