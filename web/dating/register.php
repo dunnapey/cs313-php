@@ -26,7 +26,7 @@
 
     <div id="main">
         <h2>Sign Up for a Class</h2>
-        <form action="classdetails.php?id=<php $id ?>" method="post">
+        <form action="classdetails.php?id=<?php $id ?>" method="post">
             First Name: <input type="text" name="fname">
             Last Name: <input type="text" name="lname">
             Username: <input type="text" name="uname">
