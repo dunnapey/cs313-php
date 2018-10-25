@@ -6,7 +6,8 @@
     $id = $_GET['id'];
 
     //QUERY
-    $query = $db->prepare("SELECT fname, lname FROM users WHERE class_id = :class");
+    $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
+        ON (u.id = c.user_id) WHERE c.class_id = :class");
     $query->bindParam(':class', $id);
     $query->execute();
     $students = $query->fetchAll(PDO::FETCH_ASSOC);
