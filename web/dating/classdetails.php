@@ -18,7 +18,7 @@
         $insert->execute();
 
         //INSERT CLASSUSER RELATION
-        $lastId = $db->lastInsertId();
+        $lastId = $db->lastInsertId(users_id_seq);
         $insertClass = $db->prepare("INSERT INTO classesusers (user_id, class_id) VALUES (:u, :c);");
         $insertClass->bindParam(':u', $lastId);
         $insertClass->bindParam(':c', $id);
