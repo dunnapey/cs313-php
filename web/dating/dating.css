@@ -58,6 +58,13 @@ html, body {
     text-decoration: none;
 }
 
+#register {
+    background-color: red;
+    padding: 5px;
+    color: white;
+    box-shadow: 3px 4px 10px grey;
+}
+
 table {
     margin: 5px;
     border: 1px solid black;
