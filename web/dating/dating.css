@@ -58,7 +58,7 @@ html, body {
     text-decoration: none;
 }
 
-#register {
+#main #register {
     background-color: red;
     padding: 5px;
     color: white;
