@@ -65,6 +65,10 @@ html, body {
     box-shadow: 3px 4px 10px grey;
 }
 
+li {
+    font-size: 28px;
+}
+
 table {
     margin: 5px;
     border: 1px solid black;
