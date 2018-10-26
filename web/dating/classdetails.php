@@ -68,7 +68,7 @@
                 }
             ?>
         </table>
-        <a id="register"> href="register.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
+        <a id="register" href="register.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
     </div>
 
     <?php require 'footer.html'; ?>
