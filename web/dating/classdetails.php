@@ -5,13 +5,6 @@
 
     $id = htmlspecialchars($_GET['id']);
 
-    //QUERY
-    $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
-        ON (u.id = c.user_id) WHERE c.class_id = :class");
-    $query->bindParam(':class', $id);
-    $query->execute();
-    $students = $query->fetchAll(PDO::FETCH_ASSOC);
-
     //REGISTER STUDENT IN CURRENT CLASS
     if (!empty($_POST))
     {
@@ -31,6 +24,13 @@
         $insertClass->bindParam(':c', $id);
         $insertClass->execute();
     }
+
+    //QUERY
+    $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
+        ON (u.id = c.user_id) WHERE c.class_id = :class");
+    $query->bindParam(':class', $id);
+    $query->execute();
+    $students = $query->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
