@@ -96,6 +96,20 @@ input[type = submit] {
     margin-top: 5px;
 }
 
+#kiss1 img {
+    position: fixed;
+    left: 50px;
+    top: 200px;
+    max-width: 400px;
+}
+
+#kiss2 img {
+    position: fixed;
+    right: 50px;
+    top: 200px;
+    max-width: 400px;
+}
+
 #foot {
     background-color: black;
     text-align: center;

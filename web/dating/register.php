@@ -20,9 +20,7 @@
 
 <body>
     <?php require 'header.html'; ?>
-    <script type="text/javascript">
-        document.getElementById("classes").className = "active";
-    </script>
+    <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
         <h2>Sign Up for a Class</h2>

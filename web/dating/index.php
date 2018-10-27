@@ -16,9 +16,7 @@
 
 <body>
     <?php require 'header.html'; ?>
-    <script type="text/javascript">
-        document.getElementById("home").className = "active";
-    </script>
+    <script type="text/javascript">document.getElementById("home").className = "active";</script>
 
     <div id="main">
         <h2>Dating Coaching Services</h2>
@@ -32,8 +30,10 @@
             Feel free contact us by phone or email if you have any questions or concerns. We appreciate feeback from our students. Let us know how our classes are helping you and your significant other!
         </p>
         <p style="font-size: 10px;">
-            ** Disclaimer: We do not offer full therapy services. Our instructors (dating coaches) are qualified to teach dating- and relationship-building principles and offer suggestions to couples seeking help in their relationships. Our advice is offered based on the principles taught in our courses but is not a guarantee of success through their application nor a guarantee of our instructors being able to help your relationship.
+            ** Disclaimer: We do not offer full therapy services. Our instructors (dating coaches) are qualified to teach dating and relationship-building principles and offer suggestions to couples seeking help in their relationships. Our advice is offered based on the principles taught in our courses but is not a guarantee of success through their application nor a guarantee of our instructors being able to help your relationship.
         </p>
+        <img src="assets/love1.png" alt="kiss" id="kiss1">
+        <img src="assets/love1.png" alt="kiss" id="kiss2">
     </div>
 
     <?php require 'footer.html'; ?>
