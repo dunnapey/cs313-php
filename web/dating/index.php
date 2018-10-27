@@ -26,7 +26,13 @@
             MakeItGreat.com is here to help you develop your relationships and love-life so that you can truly enjoy yourself and those you devote your time and self to.
         </p>
         <p>
-            More to come...
+            Register for one of our upcoming relationship classes, taught by a certified relationship specialist. Choose from a short overview course designed to give you a taste of the different aspects of relationship building, one class on a given topic, or take our full course that includes all topics. We offer both classes for dating or unmarried couples and courses for married couples. We also offer group classes and one-on-one sessions, or private couple's sessions.
+        </p>
+        <p>
+            Feel free contact us by phone or email if you have any questions or concerns. We appreciate feeback from our students. Let us know how our classes are helping you and your significant other!
+        </p>
+        <p style="font-size: 10px;">
+            ** Disclaimer: We do not offer full therapy services. Our instructors (dating coaches) are qualified to teach dating- and relationship-building principles and offer suggestions to couples seeking help in their relationships. Our advice is offered based on the principles taught in our courses but is not a guarantee of success through their application nor a guarantee of our instructors being able to help your relationship.
         </p>
     </div>
 

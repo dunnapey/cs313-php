@@ -53,6 +53,10 @@ html, body {
     width: 100%;
 }
 
+#main p {
+    width: 500px;
+}
+
 #main a {
     color: black;
     text-decoration: none;
