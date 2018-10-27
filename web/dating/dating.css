@@ -74,9 +74,13 @@ html, body {
 #intro {
     display: flex;
     flex-direction: column;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     align-items: center;
 }
+
+#intro h2 { text-align: center; }
+
+#intro p { max-width: 500px; min-width: 200px; }
 
 li {
     font-size: 28px;
@@ -112,6 +116,10 @@ input[type = submit] {
     width: auto;
     max-width: 400px;
 }
+#kiss1 img {
+    width: 100%;
+    min-width: 150px;
+}
 
 #kiss2 {
     position: relative;
@@ -120,6 +128,11 @@ input[type = submit] {
     transform: scaleX(-1);
     width: auto;
     max-width: 400px;
+}
+
+#kiss2 img {
+    width: 100%;
+    min-width: 150px;
 }
 
 #foot {
