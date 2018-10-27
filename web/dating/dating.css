@@ -80,7 +80,7 @@ html, body {
 
 #intro h2 { text-align: center; }
 
-#intro p { max-width: 500px; min-width: 200px; }
+#intro p { max-width: 500px; min-width: 200px; width: auto;}
 
 li {
     font-size: 28px;

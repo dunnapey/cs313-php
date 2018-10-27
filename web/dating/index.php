@@ -14,9 +14,9 @@
     <link rel="stylesheet" type="text/css" href="dating.css">
     <script type="text/javascript">
         function resize() {
-            if(document.getElementById("intro").style.width = 200)
+            if(document.getElementById("intro").style.width = "200px")
             {
-                document.getElementById("kiss1").style.opacity = .2;
+                document.getElementById("kiss1").style.opacity = ".2";
                 document.getElementById("kiss1").style.transform = "translate(175px)";
                 document.getElementById("kiss2").type = "hidden";
             }
