@@ -25,8 +25,8 @@
     <?php require 'header.html'; ?>
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
+    <h2>Classes Available</h2>
     <div id="main">
-        <h2>Classes Available</h2>
         <ul>
             <?php
                 foreach ($classes as $class) {
