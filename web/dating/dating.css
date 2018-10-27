@@ -51,7 +51,7 @@ html, body {
     position: relative;
     flex-direction: row;
     flex: 1 0 auto;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
 }
@@ -112,10 +112,11 @@ input[type = submit] {
 
 #kiss1 {
     position: relative;
-    margin: 5px;
+    margin: 20px;
     opacity: .4;
     width: auto;
     max-width: 400px;
+    align-self: center;
 }
 #kiss1 img {
     width: 100%;
@@ -124,11 +125,12 @@ input[type = submit] {
 
 #kiss2 {
     position: relative;
-    margin: 5px;
+    margin: 20px;
     opacity: .4;
     transform: scaleX(-1);
     width: auto;
     max-width: 400px;
+    align-self: center;
 }
 
 #kiss2 img {
