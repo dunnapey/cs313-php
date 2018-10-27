@@ -49,7 +49,7 @@
             </p>
         </div>
         <div id="kiss2">
-            <img src="assets/love1.png" alt="kiss" id="kiss2">
+            <img src="assets/love1.png" alt="kiss">
         </div>
     </div>
 
