@@ -19,7 +19,10 @@
     <script type="text/javascript">document.getElementById("home").className = "active";</script>
 
     <div id="main">
-        <img src="assets/love1.png" alt="kiss" id="kiss1">
+        <div id="kiss1">
+            <img src="assets/love1.png" alt="kiss">
+        </div>
+
         <div id="intro">
             <h2>Dating Coaching Services</h2>
             <p>
@@ -35,7 +38,9 @@
                 ** Disclaimer: We do not offer full therapy services. Our instructors (dating coaches) are qualified to teach dating and relationship-building principles and offer suggestions to couples seeking help in their relationships. Our advice is offered based on the principles taught in our courses but is not a guarantee of success through their application nor a guarantee of our instructors being able to help your relationship.
             </p>
         </div>
-        <img src="assets/love1.png" alt="kiss" id="kiss2">
+        <div id="kiss2">
+            <img src="assets/love1.png" alt="kiss" id="kiss2">
+        </div>
     </div>
 
     <?php require 'footer.html'; ?>
