@@ -12,16 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/png" href="../assets/favicon2.png">
     <link rel="stylesheet" type="text/css" href="dating.css">
-    <script type="text/javascript">
-        function resize() {
-            if(document.getElementById("intro").style.width = "200px")
-            {
-                document.getElementById("kiss1").style.opacity = ".2";
-                document.getElementById("kiss1").style.transform = "translate(175px)";
-                document.getElementById("kiss2").type = "hidden";
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -33,7 +23,7 @@
             <img src="assets/love1.png" alt="kiss">
         </div>
 
-        <div id="intro" onresize="resize();">
+        <div id="intro">
             <h2>Dating Coaching Services</h2>
             <p>
                 MakeItGreat.com is here to help you develop your relationships and love-life so that you can truly enjoy yourself and those you devote your time and self to.
