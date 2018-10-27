@@ -50,7 +50,7 @@
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
-        <div style="display: flex; flex-direction: column; align-items: center;">
+        <div>
             <h2>Class Details</h2>
             <table>
                 <th>Students Enrolled:</th>

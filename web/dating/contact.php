@@ -19,11 +19,13 @@
     <script type="text/javascript">document.getElementById("contact").className = "active";</script>
 
     <div id="main">
-        <h2>Contact Us</h2>
-        <ul>
-            <li><a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a></li>
-            <li><a href="tel:555-555-5555">Call Us</a></li>
-        </ul>
+        <div>
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a></li>
+                <li><a href="tel:555-555-5555">Call Us</a></li>
+            </ul>
+        </div>
     </div>
 
     <?php require 'footer.html'; ?>
