@@ -50,7 +50,7 @@
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
-        <div>
+        <div style="display: flex; flex-direction: column; align-items: center;">
             <h2>Class Details</h2>
             <table>
                 <th>Students Enrolled:</th>
@@ -66,7 +66,7 @@
                         }
                     }
                 ?>
-            </table>
+            </table><br>
             <a id="register" href="register.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
         </div>
     </div>
