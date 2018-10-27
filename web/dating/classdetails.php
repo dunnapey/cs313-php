@@ -50,23 +50,25 @@
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
-        <h2>Class Details</h2>
-        <table>
-            <th>Students Enrolled:</th>
-            <?php
-                if (empty($students))
-                    echo "<tr><td>No students in this class yet</td></tr>";
-                else
-                {
-                    foreach ($students as $student) {
-                        $fname = $student['fname'];
-                        $lname = $student['lname'];
-                        echo "<tr><td>$fname $lname</td></tr>";
+        <div>
+            <h2>Class Details</h2>
+            <table>
+                <th>Students Enrolled:</th>
+                <?php
+                    if (empty($students))
+                        echo "<tr><td>No students in this class yet</td></tr>";
+                    else
+                    {
+                        foreach ($students as $student) {
+                            $fname = $student['fname'];
+                            $lname = $student['lname'];
+                            echo "<tr><td>$fname $lname</td></tr>";
+                        }
                     }
-                }
-            ?>
-        </table>
-        <a id="register" href="register.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
+                ?>
+            </table>
+            <a id="register" href="register.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
+        </div>
     </div>
 
     <?php require 'footer.html'; ?>
