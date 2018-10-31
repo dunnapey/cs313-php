@@ -13,7 +13,7 @@
         $query->execute();
         $signedIn = $query->fetch(PDO::FETCH_ASSOC);
 
-        if (!$signedIn['user'] == $user && password_verify($_POST['pwd']))
+        if ($signedIn['username'] == $user && password_verify($_POST['pwd']))
         {
             $_SESSION['username'] = $signedIn['user'];
             $_SESSION['userId'] = $signedIn['id'];
@@ -54,7 +54,7 @@
         </div>
 
         <div id="loginBox">
-            <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <form method="post" action="login.php">
                 <?php
                     if ($fail) {
                         echo "<p style='color: red; font-weight: bold; text-align: center;'>* Username or password is invalid.</p>";
