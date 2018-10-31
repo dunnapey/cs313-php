@@ -20,7 +20,7 @@
             $_SESSION['loggedin'] = true;
 
             //redirect to HOME
-            header("Location: index.php");
+            header('Location: index.php');
             die();
         }
         else
