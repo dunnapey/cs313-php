@@ -7,15 +7,15 @@
         $user = $_POST['username'];
 
         //login user
-        $query = $db->prepare("SELECT id, user, password FROM users
+        $query = $db->prepare("SELECT id, username, password FROM users
             WHERE user = :user");
         $query->bindParam(':user', $user);
         $query->execute();
         $signedIn = $query->fetch(PDO::FETCH_ASSOC);
 
-        if ($signedIn['username'] == $user && password_verify($_POST['pwd']))
+        if ($signedIn['username'] == $user && password_verify($_POST['pwd'], $signedIn['password']))
         {
-            $_SESSION['username'] = $signedIn['user'];
+            $_SESSION['username'] = $signedIn['username'];
             $_SESSION['userId'] = $signedIn['id'];
             $_SESSION['loggedIn'] = true;
 
@@ -56,13 +56,13 @@
         <div id="loginBox">
             <form method="post" action="login.php">
                 <?php
-                    if ($fail) {
+                    if ($fail == true) {
                         echo "<p style='color: red; font-weight: bold; text-align: center;'>* Username or password is invalid.</p>";
                     }
                 ?>
                 Username: <input type="text" name="username">
                 Password: <input type="password" name="pwd">
-                <input type="submit" name="submit" value="LOG IN">
+                <input type="submit" name="submit" value="LOG IN"><br>
                 <a href="register.php">Create an Account</a>
             </form>
         </div>
