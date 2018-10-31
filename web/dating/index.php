@@ -1,5 +1,9 @@
 <?php
     session_start();
+
+    if ($_SESSION['loggedIn']) {
+        # code...
+    }
 ?>
 
 <!DOCTYPE html>

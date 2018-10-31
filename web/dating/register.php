@@ -1,9 +1,6 @@
 <?php
     session_start();
-
     require '../herokudb.php';
-
-    $id = $_GET['id'];
 ?>
 
 <!DOCTYPE html>
@@ -24,12 +21,12 @@
 
     <div id="main">
         <div>
-            <h2>Sign Up for a Class</h2>
-            <form action="classdetails.php?id=<?php echo $id; ?>" method="post">
+            <h2>Create an Account</h2>
+            <form action="createuser.php" method="post">
                 First Name: <input type="text" name="fname">
                 Last Name: <input type="text" name="lname">
                 Username: <input type="text" name="uname">
-                Password: <input type="text" name="pwd">
+                Password: <input type="password" name="pwd">
                 Email: <input type="text" name="email">
                 <input type="submit" name="submit" value="SUBMIT">
             </form>

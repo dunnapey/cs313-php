@@ -1,29 +1,8 @@
 <?php
     session_start();
-
     require '../herokudb.php';
 
     $id = htmlspecialchars($_GET['id']);
-
-    //REGISTER STUDENT IN CURRENT CLASS
-    if (!empty($_POST))
-    {
-        //INSERT NEW USER
-        $insert = $db->prepare("INSERT INTO users (username, fName, lName, password, email) VALUES (:user, :fname, :lname, :pwd, :email);");
-        $insert->bindParam(':user', $_POST['uname']);
-        $insert->bindParam(':fname', $_POST['fname']);
-        $insert->bindParam(':lname', $_POST['lname']);
-        $insert->bindParam(':pwd', $_POST['pwd']);
-        $insert->bindParam(':email', $_POST['email']);
-        $insert->execute();
-
-        //INSERT CLASSUSER RELATION
-        $lastId = $db->lastInsertId(users_id_seq);
-        $insertClass = $db->prepare("INSERT INTO classesusers (user_id, class_id) VALUES (:u, :c);");
-        $insertClass->bindParam(':u', $lastId);
-        $insertClass->bindParam(':c', $id);
-        $insertClass->execute();
-    }
 
     //QUERY
     $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
