@@ -3,7 +3,7 @@
     require '../herokudb.php';
 
     $user = htmlspecialchars($_POST['uname']);
-    $fname = htmlspecialchars($_POST['fname'])
+    $fname = htmlspecialchars($_POST['fname']);
     $lname = htmlspecialchars($_POST['lname']);
     $pwd = htmlspecialchars($_POST['pwd']);
     $email = htmlspecialchars($_POST['email']);
