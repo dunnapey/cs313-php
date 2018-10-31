@@ -16,9 +16,9 @@
         <a href="contact.php" id="contact">CONTACT US</a>
     </span>
     <?php
-        if ($user) {
+        if ($user)
             echo "<span style='color: white; text-decoration: none; margin-left: 20px;'>WELCOME $user!</span>";
-        }
+        else
+            echo "<a href='login.php' style='color: white; text-decoration: none; margin-left: 20px;'>SIGN IN</a>";
     ?>
-    <a href="login.php" style="color: white; text-decoration: none; margin-left: 20px;">SIGN IN</a>
 </div>
