@@ -2,21 +2,24 @@
     session_start();
     require '../herokudb.php';
 
+    $fail;
+
     if (isset($_POST['submit']))
     {
         $user = $_POST['username'];
 
-        //login user
+        //RETURN USER DATA
         $query = $db->prepare("SELECT id, username, password FROM users
             WHERE user = :user");
         $query->bindParam(':user', $user);
         $query->execute();
-        $signedIn = $query->fetch(PDO::FETCH_ASSOC);
+        $dbRow = $query->fetch(PDO::FETCH_ASSOC);
 
-        if ($signedIn['username'] == $user && password_verify($_POST['pwd'], $signedIn['password']))
+        if ($dbRow['username'] == $user && password_verify($_POST['pwd'], $dbRow['password']))
         {
-            $_SESSION['username'] = $signedIn['username'];
-            $_SESSION['userId'] = $signedIn['id'];
+            //LOGIN USER
+            $_SESSION['username'] = $dbRow['username'];
+            $_SESSION['userId'] = $dbRow['id'];
             $_SESSION['loggedIn'] = true;
 
             $fail = false;
@@ -25,6 +28,7 @@
             header("Location: index.php");
             die();
         } else {
+            //LOGIN FAIL -> TRY AGAIN
             $_SESSION = array();
             $_SESSION['loggedIn'] = false;
             $fail = true;
