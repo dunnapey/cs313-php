@@ -17,14 +17,18 @@
         {
             $_SESSION['username'] = $signedIn['user'];
             $_SESSION['userId'] = $signedIn['id'];
-            $_SESSION['loggedin'] = true;
+            $_SESSION['loggedIn'] = true;
+
+            $fail = false;
 
             //redirect to HOME
-            header('Location: index.php');
+            header("Location: index.php");
             die();
-        }
-        else
+        } else {
+            $_SESSION = array();
+            $_SESSION['loggedIn'] = false;
             $fail = true;
+        }
     }
 ?>
 
@@ -52,8 +56,9 @@
         <div id="loginBox">
             <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <?php
-                    if ($fail)
+                    if ($fail) {
                         echo "<p style='color: red; font-weight: bold; text-align: center;'>* Username or password is invalid.</p>";
+                    }
                 ?>
                 Username: <input type="text" name="username">
                 Password: <input type="password" name="pwd">

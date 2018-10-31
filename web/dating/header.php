@@ -1,10 +1,5 @@
 <?php
     session_start();
-    require '../herokudb.php';
-
-    if ($_SESSION['loggedIn']) {
-        $user = $_SESSION['username'];
-    }
 ?>
 
 <div id="head">
@@ -16,9 +11,12 @@
         <a href="contact.php" id="contact">CONTACT US</a>
     </span>
     <?php
-        if ($user)
+        if ($_SESSION['loggedIn'] == true)
+        {
+            $user = $_SESSION['username'];
             echo "<span style='color: white; text-decoration: none; margin-left: 20px;'>WELCOME $user!</span>";
-        else
+        } else {
             echo "<a href='login.php' style='color: white; text-decoration: none; margin-left: 20px;'>SIGN IN</a>";
+        }
     ?>
 </div>
