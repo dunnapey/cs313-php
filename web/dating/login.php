@@ -4,7 +4,7 @@
 
     if (isset($_POST['submit']))
     {
-        $user = $_POST['user'];
+        $user = $_POST['username'];
 
         //login user
         $query = $db->prepare("SELECT id, user, password FROM users
@@ -53,7 +53,7 @@
             <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <?php
                     if ($fail)
-                        echo "<p style='color: red;'>* Username or password is invalid.</p>";
+                        echo "<p style='color: red; font-weight: bold; text-align: center;'>* Username or password is invalid.</p>";
                 ?>
                 Username: <input type="text" name="username">
                 Password: <input type="password" name="pwd">
