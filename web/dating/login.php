@@ -10,7 +10,7 @@
 
         //RETURN USER DATA
         $query = $db->prepare("SELECT id, username, password FROM users
-            WHERE user = :user");
+            WHERE username = :user");
         $query->bindParam(':user', $user);
         $query->execute();
         $dbRow = $query->fetch(PDO::FETCH_ASSOC);
