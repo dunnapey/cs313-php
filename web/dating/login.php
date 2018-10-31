@@ -18,6 +18,10 @@
             $_SESSION['username'] = $signedIn['user'];
             $_SESSION['userId'] = $signedIn['id'];
             $_SESSION['loggedin'] = true;
+
+            //redirect to HOME
+            header("Location: index.php");
+            die();
         }
         else
             $fail = true;
@@ -37,7 +41,7 @@
 </head>
 
 <body>
-    <?php require 'header.html'; ?>
+    <?php require 'header.php'; ?>
     <script type="text/javascript">document.getElementById("home").className = "active";</script>
 
     <div id="main">
@@ -51,8 +55,8 @@
                     if ($fail)
                         echo "<p style='color: red;'>* Username or password is invalid.</p>";
                 ?>
-                <input type="text" name="username">
-                <input type="password" name="pwd">
+                Username: <input type="text" name="username">
+                Password: <input type="password" name="pwd">
                 <input type="submit" name="submit" value="LOG IN">
                 <a href="register.php">Create an Account</a>
             </form>

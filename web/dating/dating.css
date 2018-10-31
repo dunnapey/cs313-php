@@ -116,6 +116,26 @@ input[type = submit] {
     margin-top: 5px;
 }
 
+#loginBox {
+    padding: 100px;
+    width: 200px;
+    background-color: dimgrey;
+    border-radius: 40px;
+    margin-top: 50px;
+    box-shadow: 10px 15px 80px;
+}
+
+#loginBox input[type = submit] {
+    background-color: lightgreen;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+
+#loginBox a {
+    color: white;
+    text-decoration: none;
+}
+
 #kiss1 {
     position: relative;
     margin: 20px;

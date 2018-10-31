@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <?php require 'header.html'; ?>
+    <?php require 'header.php'; ?>
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <h2>Classes Available</h2>

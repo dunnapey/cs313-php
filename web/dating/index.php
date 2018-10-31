@@ -1,9 +1,6 @@
 <?php
     session_start();
-
-    if ($_SESSION['loggedIn']) {
-        # code...
-    }
+    require '../herokudb.php';
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +16,7 @@
 </head>
 
 <body>
-    <?php require 'header.html'; ?>
+    <?php require 'header.php'; ?>
     <script type="text/javascript">document.getElementById("home").className = "active";</script>
 
     <div id="main">

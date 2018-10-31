@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <?php require 'header.html'; ?>
+    <?php require 'header.php'; ?>
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
