@@ -46,7 +46,7 @@
                     }
                 ?>
             </table><br>
-            <a id="register" href="register.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
+            <a id="register" href="enroll.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
         </div>
     </div>
 
