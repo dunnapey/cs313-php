@@ -1,6 +1,5 @@
 <?php
     session_start();
-    require '../herokudb.php';
 ?>
 
 <!DOCTYPE html>
