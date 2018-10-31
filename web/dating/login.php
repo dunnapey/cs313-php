@@ -7,7 +7,7 @@
         $user = $_POST['user'];
 
         //login user
-        $query = $db->prepare("SELECT id, user, pwd FROM users
+        $query = $db->prepare("SELECT id, user, password FROM users
             WHERE user = :user");
         $query->bindParam(':user', $user);
         $query->execute();
