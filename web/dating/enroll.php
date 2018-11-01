@@ -13,7 +13,7 @@
         $insertClass->execute();
 
         //REDIRECT TO CLASSDETAILS
-        header("Location: classdetails.php");
+        header("Location: classdetails.php?id=$classId");
         die();
     } else {
         //REDIRECT TO LOGIN

@@ -5,8 +5,11 @@
     $id = (int) $_GET['id'];
 
     //QUERY
-    $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
-        ON (u.id = c.user_id) WHERE c.class_id = :class");
+    $query = $db->prepare("SELECT u.fname, u.lname, c.name, c.cost FROM users AS u JOIN classesusers as cu
+        ON (u.id = cu.user_id) 
+        JOIN classes as c
+        ON (cu.class_id = c.id)
+        WHERE cu.class_id = :class");
     $query->bindParam(':class', $id);
     $query->execute();
     $students = $query->fetchAll(PDO::FETCH_ASSOC);
