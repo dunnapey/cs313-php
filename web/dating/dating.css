@@ -136,8 +136,13 @@ input[type = submit] {
 }
 
 .drop {
-    float: left;
+    position: relative;
+    display: inline;
     overflow: hidden;
+    color: white;
+    margin-left: 20px;
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .drop:hover {

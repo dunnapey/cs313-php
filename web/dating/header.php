@@ -15,9 +15,7 @@
         {
             $user = $_SESSION['username'];
             echo "<div class='drop'>
-                    <span>WELCOME $user! 
-                        <i class='fa fa-caret-down'></i>
-                    </span>
+                    <span>WELCOME $user!</span>
                     <div class='dropContent'>
                         <a href=''>Account</a>
                         <a href='logout.php'>Log Out</a>
