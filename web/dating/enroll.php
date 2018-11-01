@@ -2,7 +2,7 @@
     session_start();
     require '../herokudb.php';
 
-    $classId = htmlspecialchars($_GET['id']);
+    $classId = (int) $_GET['id'];
 
     if ($_SESSION['loggedIn'] == true) {
         //INSERT CLASSUSER RELATION
