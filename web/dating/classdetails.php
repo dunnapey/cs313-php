@@ -2,7 +2,7 @@
     session_start();
     require '../herokudb.php';
 
-    $id = htmlspecialchars($_GET['id']);
+    $id = (int) $_GET['id'];
 
     //QUERY
     $query = $db->prepare("SELECT u.fname, u.lname FROM users AS u JOIN classesusers as c
