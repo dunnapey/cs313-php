@@ -14,7 +14,15 @@
         if ($_SESSION['loggedIn'] == true)
         {
             $user = $_SESSION['username'];
-            echo "<span style='color: white; text-decoration: none; margin-left: 20px;'>WELCOME $user!</span>";
+            echo "<div class='drop'>
+                    <span>WELCOME $user! 
+                        <i class='fa fa-caret-down'></i>
+                    </span>
+                    <div class='dropContent'>
+                        <a href=''>Account</a>
+                        <a href='logout.php'>Log Out</a>
+                    </div>
+                </div>";
         } else {
             echo "<a href='login.php' style='color: white; text-decoration: none; margin-left: 20px;'>SIGN IN</a>";
         }
