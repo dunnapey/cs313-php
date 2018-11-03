@@ -21,7 +21,7 @@
                     </div>
                 </li>";
         } else {
-            echo "<li id='signin'><a href='login.php' style='color: white; text-decoration: none; margin-left: 20px;'>SIGN IN</a></li>";
+            echo "<li id='signin'><a href='login.php'>SIGN IN</a></li>";
         }
     ?>
     </ul>
