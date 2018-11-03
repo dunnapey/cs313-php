@@ -17,6 +17,7 @@ html, body {
     margin: 0px;
     margin-left: 10px;
     display: flex;
+    align-items: flex-end;
 }
 
 #nav li.active {
@@ -34,8 +35,8 @@ html, body {
     background-color: red;
 }
 
-#nav li:hover a {
-    margin-top: 8px;
+#nav li:hover {
+    padding-top: 8px;
 }
 
 #nav li a {
