@@ -33,12 +33,14 @@ html, body {
     background-color: red;
 }
 
-#nav li:hover {
-    padding-top: 8px;
+#nav li:hover a {
+    margin-top: 8px;
 }
 
 #nav li a {
     color: white;
+    margin: 0px;
+    padding: 0px;
     text-decoration: none;
 }
 
