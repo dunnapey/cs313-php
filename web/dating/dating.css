@@ -27,6 +27,7 @@ html, body {
 #nav li {
     color: white;
     text-decoration: none;
+    height: fit-content;
     border-radius: 5px 5px 0px 0px;
     padding: 5px 5px 0px 5px;
     margin: 0px 2px 0px 2px;
