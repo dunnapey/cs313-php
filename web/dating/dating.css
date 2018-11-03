@@ -20,7 +20,7 @@ html, body {
     float: left;
 }
 
-#nav a.active {
+#nav li.active {
     padding-top: 8px;
     background-color: lightseagreen;
 }

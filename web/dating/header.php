@@ -6,9 +6,9 @@
     <h1>Make It Great</h1>
     <br>
     <ul id="nav">
-        <li><a href="index.php" id="home">HOME</a></li>
-        <li><a href="classes.php" id="classes">CLASSES</a></li>
-        <li><a href="contact.php" id="contact">CONTACT US</a></li>
+        <li id="home"><a href="index.php">HOME</a></li>
+        <li id="classes"><a href="classes.php">CLASSES</a></li>
+        <li id="contact"><a href="contact.php">CONTACT US</a></li>
     <?php
         if ($_SESSION['loggedIn'] == true)
         {
@@ -21,7 +21,7 @@
                     </div>
                 </li>";
         } else {
-            echo "<li><a href='login.php' style='color: white; text-decoration: none; margin-left: 20px;'>SIGN IN</a></li>";
+            echo "<li id='signin'><a href='login.php' style='color: white; text-decoration: none; margin-left: 20px;'>SIGN IN</a></li>";
         }
     ?>
     </ul>

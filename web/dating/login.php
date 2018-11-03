@@ -50,7 +50,7 @@
 
 <body>
     <?php require 'header.php'; ?>
-    <script type="text/javascript">document.getElementById("home").className = "active";</script>
+    <script type="text/javascript">document.getElementById("signin").className = "active";</script>
 
     <div id="main">
         <div id="kiss1">
