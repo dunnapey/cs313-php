@@ -14,6 +14,9 @@ html, body {
     margin-left: 10px;
     list-style-type: none;
     overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
 }
 
 #nav li {
@@ -35,6 +38,11 @@ html, body {
 
 #nav li:hover {
     padding-top: 8px;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
 }
 
 #head {
