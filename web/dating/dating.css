@@ -11,12 +11,12 @@ html, body {
 }
 
 #nav {
-    margin-left: 10px;
     list-style-type: none;
     overflow: hidden;
     padding: 0px;
     margin: 0px;
     margin-left: 10px;
+    display: flex;
 }
 
 #nav li.active {
@@ -25,7 +25,6 @@ html, body {
 }
 
 #nav li {
-    float: left;
     color: white;
     text-decoration: none;
     border-radius: 5px 5px 0px 0px;
@@ -148,7 +147,7 @@ input[type = submit] {
     text-decoration: none;
 }
 
-li.drop {
+#nav li.drop {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -158,11 +157,12 @@ li.drop {
     border-radius: 5px 5px 0px 0px;
 }
 
-li.drop:hover {
-    background-color: red;
+#nav li.drop:hover {
+    background-color: black;
+    border-bottom: 5px solid red;
 }
 
-.dropContent {
+#nav li.drop div.dropContent {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -170,8 +170,7 @@ li.drop:hover {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
-.dropContent a {
+#nav li.drop div.dropContent a {
     float: none;
     color: black;
     padding: 12px 16px;
@@ -180,11 +179,11 @@ li.drop:hover {
     text-align: left;
 }
 
-.dropContent a:hover {
+#nav li.drop div.dropContent a:hover {
     background-color: #ddd;
 }
 
-.drop:hover .dropContent {
+#nav li.drop:hover div.dropContent {
     display: block;
 }
 
