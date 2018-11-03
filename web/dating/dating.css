@@ -12,6 +12,12 @@ html, body {
 
 #nav {
     margin-left: 10px;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#nav li {
+    float: left;
 }
 
 #nav a.active {
@@ -19,7 +25,7 @@ html, body {
     background-color: lightseagreen;
 }
 
-#nav a {
+#nav li {
     color: white;
     text-decoration: none;
     border-radius: 5px 5px 0px 0px;
@@ -27,7 +33,7 @@ html, body {
     background-color: red;
 }
 
-#nav a:hover {
+#nav li:hover {
     padding-top: 8px;
 }
 
@@ -136,17 +142,18 @@ input[type = submit] {
     text-decoration: none;
 }
 
-.drop {
+li.drop {
     position: relative;
     display: inline-block;
     overflow: hidden;
     color: white;
+    background-color: black;
     margin-left: 20px;
     padding: 10px 10px 0px 10px;
     border-radius: 5px 5px 0px 0px;
 }
 
-.drop:hover {
+li.drop:hover {
     background-color: red;
 }
 
