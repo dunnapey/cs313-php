@@ -19,20 +19,18 @@ html, body {
     margin-left: 10px;
 }
 
-#nav li {
-    float: left;
-}
-
 #nav li.active {
     padding-top: 8px;
     background-color: lightseagreen;
 }
 
 #nav li {
+    float: left;
     color: white;
     text-decoration: none;
     border-radius: 5px 5px 0px 0px;
     padding: 5px 5px 0px 5px;
+    margin: 0px 2px 0px 2px;
     background-color: red;
 }
 
