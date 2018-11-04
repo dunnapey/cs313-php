@@ -3,6 +3,7 @@
     require '../herokudb.php';
 
     $id = (int) $_GET['id'];
+    $enrollFail = $_GET['error'];
 
     //QUERY
     $query = $db->prepare("SELECT u.fname, u.lname, c.name, c.cost FROM users AS u JOIN classesusers as cu
@@ -49,6 +50,7 @@
                     }
                 ?>
             </table><br>
+            <?php if ($enrollFail == true) echo "<p style='color: red'>* You're already registered for this course!</p>"; ?>
             <a id="register" href="enroll.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
         </div>
     </div>
