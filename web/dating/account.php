@@ -31,34 +31,36 @@
     <?php require 'header.php'; ?>
     <script type="text/javascript">document.getElementById("account").className = "active";</script>
 
-    <div id="kiss1">
-        <img src="assets/love1.png" alt="kiss">
-    </div>
-
     <div id="main">
-        <h2>Account Details</h2>
-        <table>
-            <th>You are Enrolled in these courses:</th>
-            <?php
-                if (empty($classes))
-                    echo "<tr><td>You haven't enrolled in any courses yet</td></tr>";
-                else
-                {
-                    $total = 0;
-                    foreach ($classes as $class) {
-                        $name = $class['name'];
-                        $cost = $class['cost'];
-                        echo "<tr><td>$name</td><td>\$$cost</td></tr>";
-                        $total += $cost;
-                    }
-                    echo "<tr><td><b>\$$total<b></td></tr>";
-                }
-            ?>
-        </table><br>
-    </div>
+        <div id="kiss1">
+            <img src="assets/love1.png" alt="kiss">
+        </div>
 
-    <div id="kiss2">
-        <img src="assets/love1.png" alt="kiss">
+        <div>
+            <h2>Account Details</h2>
+            <table>
+                <th>You are Enrolled in these courses:</th>
+                <?php
+                    if (empty($classes))
+                        echo "<tr><td>You haven't enrolled in any courses yet</td></tr>";
+                    else
+                    {
+                        $total = 0;
+                        foreach ($classes as $class) {
+                            $name = $class['name'];
+                            $cost = $class['cost'];
+                            echo "<tr><td>$name</td><td>\$$cost</td></tr>";
+                            $total += $cost;
+                        }
+                        echo "<tr><td><b>\$$total<b></td></tr>";
+                    }
+                ?>
+            </table><br>
+        </div>
+
+        <div id="kiss2">
+            <img src="assets/love1.png" alt="kiss">
+        </div>
     </div>
 
     <?php require 'footer.html'; ?>
