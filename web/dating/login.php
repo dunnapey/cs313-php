@@ -9,7 +9,7 @@
         header("Location: index.php");
         die();
     }
-    else (isset($_POST['submit']))
+    else if (isset($_POST['submit']))
     {
         $user = $_POST['username'];
 
