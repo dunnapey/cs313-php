@@ -16,7 +16,7 @@
             echo "<li id='account' class='drop'>
                     <span>WELCOME $user!</span>
                     <div class='dropContent'>
-                        <a href=''>Account</a>
+                        <a href='account.php'>Account</a>
                         <a href='logout.php'>Log Out</a>
                     </div>
                 </li>";
