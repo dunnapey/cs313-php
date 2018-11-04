@@ -12,7 +12,7 @@ html, body {
 
 #nav {
     list-style-type: none;
-    overflow: hidden;
+    overflow: visible;
     padding: 0px;
     margin: 0px;
     margin-left: 10px;
