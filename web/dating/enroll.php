@@ -12,7 +12,7 @@
         $isEnrolled->bindParam(':cid', $classId);
         $isEnrolled->bindParam(':uid', $_SESSION['userId']);
         $isEnrolled->execute();
-        $dbRow = $isEnrolled->fetch(PDO::FETCH_ASSOC)
+        $dbRow = $isEnrolled->fetch(PDO::FETCH_ASSOC);
         if ($dbRow['class_id'] == $classId) {
             $fail = true;
             header("Location: classdetails.php?error=$fail");
