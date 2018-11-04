@@ -61,6 +61,7 @@
                     }
                 ?>
             </table><br>
+            <a id="register" href="unenroll.php">Unenroll</a>
         </div>
 
         <div id="kiss2">
