@@ -6,7 +6,7 @@
 
     if ($_SESSION['loggedIn'] == true) {
         //CHECK IF ALREADY ENROLLED
-        $isEnrolled = $db->prepare("SELECT user_id FROM classesusers
+        $isEnrolled = $db->prepare("SELECT user_id, class_id FROM classesusers
                             WHERE class_id = :cid
                             AND user_id = :uid;");
         $isEnrolled->bindParam(':cid', $classId);
