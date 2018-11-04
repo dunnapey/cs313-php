@@ -13,7 +13,7 @@
         if ($_SESSION['loggedIn'] == true)
         {
             $user = $_SESSION['username'];
-            echo "<li id='account' class='drop'>
+            echo "<li id='account'>
                     <span>WELCOME $user!</span>
                     <div class='dropContent'>
                         <a href='account.php'>Account</a>

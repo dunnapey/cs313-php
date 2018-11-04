@@ -2,6 +2,11 @@
     session_start();
     require '../herokudb.php';
 
+    if ($_SESSION['loggedIn'] == false) {
+        header("Location: index.php");
+        die();
+    }
+
     $id = (int) $_SESSION['userId'];
 
     //QUERY
@@ -39,7 +44,7 @@
         <div>
             <h2>Account Details</h2>
             <table>
-                <th>You are Enrolled in these courses:</th>
+                <tr><th>You are Enrolled in these courses:</th></tr>
                 <?php
                     if (empty($classes))
                         echo "<tr><td>You haven't enrolled in any courses yet</td></tr>";
@@ -52,7 +57,7 @@
                             echo "<tr><td>$name</td><td>\$$cost</td></tr>";
                             $total += $cost;
                         }
-                        echo "<tr><td><b>\$$total<b></td></tr>";
+                        echo "<tr><td><b>Total:</b></td><td><b>\$$total<b></td></tr>";
                     }
                 ?>
             </table><br>
