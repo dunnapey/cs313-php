@@ -42,6 +42,15 @@
                 ?>
             </ul>
         </div>
+
+        <div style="position: relative;
+                    margin: 20px;
+                    opacity: .4;
+                    width: auto;
+                    max-width: 400px;
+                    align-self: center;">
+            <!--  -->
+        </div>
     </div>
 
     <?php require 'footer.html'; ?>
