@@ -44,7 +44,7 @@
         <div>
             <h2>Account Details</h2>
             <table>
-                <tr><th>You are Enrolled in these courses:</th></tr>
+                <tr style="border: none; text-align: center;"><th>You are Enrolled in these courses:</th></tr>
                 <?php
                     if (empty($classes))
                         echo "<tr><td>You haven't enrolled in any courses yet</td></tr>";

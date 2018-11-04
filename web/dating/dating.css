@@ -159,6 +159,10 @@ input[type = submit] {
     background-color: black;
 }
 
+#nav #account.active {
+    background-color: lightseagreen;
+}
+
 #nav #account:hover {
     background-color: black;
     box-shadow: inset 0px -5px 0px 0px red;
