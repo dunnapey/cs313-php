@@ -15,7 +15,7 @@
         $dbRow = $isEnrolled->fetch(PDO::FETCH_ASSOC);
         if ($dbRow['class_id'] == $classId) {
             $fail = true;
-            header("Location: classdetails.php?error=$fail");
+            header("Location: classdetails.php?id=$classId&error=$fail");
             die();
         }
 
