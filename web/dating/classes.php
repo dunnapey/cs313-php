@@ -26,6 +26,10 @@
 
     <h2>Classes Available</h2>
     <div id="main">
+        <div>
+            <img src="assets/dating1.jpg">
+        </div>
+        
         <ul>
             <?php
                 foreach ($classes as $class) {
