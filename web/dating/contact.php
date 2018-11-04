@@ -20,11 +20,17 @@
 
     <div id="main">
         <div>
+            <img src="assets/email.png">
+        </div>
+
+        <div>
             <h2>Contact Us</h2>
-            <ul>
-                <li><a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a></li>
-                <li><a href="tel:555-555-5555">Call Us</a></li>
-            </ul>
+            <a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a><br>
+            <a href="tel:555-555-5555">Call Us</a>
+        </div>
+
+        <div>
+            <img src="assets/phone.png">
         </div>
     </div>
 
