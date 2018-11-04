@@ -48,6 +48,7 @@
                     opacity: .4;
                     width: auto;
                     max-width: 400px;
+                    flex: 1 1 auto;
                     align-self: center;">
             <!--  -->
         </div>
