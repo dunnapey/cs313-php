@@ -6,7 +6,7 @@
 
     if ($_SESSION['loggedIn'] == true) {
         $fail = false;
-        header("Location: index.php"):
+        header("Location: index.php");
         die();
     }
     else (isset($_POST['submit']))
