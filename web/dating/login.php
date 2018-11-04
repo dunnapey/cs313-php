@@ -4,7 +4,12 @@
 
     $fail;
 
-    if (isset($_POST['submit']))
+    if ($_SESSION['loggedIn'] == true) {
+        $fail = false;
+        header("Location: index.php"):
+        die();
+    }
+    else (isset($_POST['submit']))
     {
         $user = $_POST['username'];
 
@@ -39,7 +44,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Make It Great</title>
+    <title>MYRGA</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- viewPort width adjusts for mobile device sizes -->

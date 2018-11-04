@@ -3,7 +3,7 @@
 ?>
 
 <div id="head">
-    <h1>Make It Great</h1>
+    <h1>Make Your Relationship Great Again</h1>
     <br>
     <ul id="nav">
         <li id="home"><a href="index.php">HOME</a></li>

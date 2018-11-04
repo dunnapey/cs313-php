@@ -20,6 +20,14 @@
     $insert->bindParam(':email', $email);
     $insert->execute();
 
-    header("Location: index.php");
+    //GET ID of NEW USER
+    $userId = (int) $db->lastInsertId(users_id_seq);
+
+    //LOGIN NEW USER
+    $_SESSION['username'] = $user;
+    $_SESSION['userId'] = $userId;
+    $_SESSION['loggedIn'] = true;
+
+    header("Location: login.php");
     die();
 ?>

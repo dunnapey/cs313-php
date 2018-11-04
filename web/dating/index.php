@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Make It Great</title>
+    <title>MYRGA</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <!-- viewPort width adjusts for mobile device sizes -->
@@ -26,7 +26,7 @@
         <div class="mainContent">
             <h2>Dating Coaching Services</h2>
             <p>
-                MakeItGreat.com is here to help you develop your relationships and love-life so that you can truly enjoy yourself and those you devote your time and self to.
+                MYRGA.com is here to help you develop your relationships and love-life so that you can truly enjoy yourself and those you devote your time and self to.
             </p>
             <p>
                 Register for one of our upcoming relationship classes, taught by a certified relationship specialist. Choose from a short overview course designed to give you a taste of the different aspects of relationship building, one class on a given topic, or take our full course that includes all topics. We offer both classes for dating or unmarried couples and courses for married couples. We also offer group classes and one-on-one sessions, or private couple's sessions.
@@ -38,7 +38,7 @@
                 ** Disclaimer: We do not offer full therapy services. Our instructors (dating coaches) are qualified to teach dating and relationship-building principles and offer suggestions to couples seeking help in their relationships. Our advice is offered based on the principles taught in our courses but is not a guarantee of success through their application nor a guarantee of our instructors being able to help your relationship.
             </p>
         </div>
-        
+
         <div id="kiss2">
             <img src="assets/love1.png" alt="kiss">
         </div>
