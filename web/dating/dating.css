@@ -220,6 +220,20 @@ input[type = submit] {
     min-width: 150px;
 }
 
+#dating1 {
+    position: relative;
+    margin: 20px;
+    opacity: .8;
+    width: auto;
+    max-width: 400px;
+    align-self: center;
+}
+
+#dating1 img {
+    width: 100%;
+    min-width: 150px;
+}
+
 #foot {
     background-color: black;
     text-align: center;
