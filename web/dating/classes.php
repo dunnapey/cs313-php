@@ -26,20 +26,22 @@
 
     <h2>Classes Available</h2>
     <div id="main">
-        <div>
+        <div id="dating1">
             <img src="assets/dating1.jpg">
         </div>
-        
-        <ul>
-            <?php
-                foreach ($classes as $class) {
-                    $id = $class['id'];
-                    $name = $class['name'];
-                    $cost = $class['cost'];
-                    echo "<li><a href='classdetails.php?id=$id'>$name (\$$cost)</a></li>";
-                }
-            ?>
-        </ul>
+
+        <div class="mainContent">
+            <ul>
+                <?php
+                    foreach ($classes as $class) {
+                        $id = $class['id'];
+                        $name = $class['name'];
+                        $cost = $class['cost'];
+                        echo "<li><a href='classdetails.php?id=$id'>$name (\$$cost)</a></li>";
+                    }
+                ?>
+            </ul>
+        </div>
     </div>
 
     <?php require 'footer.html'; ?>

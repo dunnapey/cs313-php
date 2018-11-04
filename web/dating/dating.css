@@ -91,16 +91,16 @@ html, body {
     box-shadow: 3px 4px 10px grey;
 }
 
-#intro {
+.mainContent {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     align-items: center;
 }
 
-#intro h2 { text-align: center; }
+.mainContent h2 { text-align: center; }
 
-#intro p { max-width: 500px; min-width: 200px; width: auto;}
+.mainContent p { max-width: 500px; min-width: 200px; width: auto;}
 
 li {
     font-size: 28px;

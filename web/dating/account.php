@@ -41,7 +41,7 @@
             <img src="assets/love1.png" alt="kiss">
         </div>
 
-        <div>
+        <div class="mainContent">
             <h2>Account Details</h2>
             <table style="border: none;">
                 <tr><th>You are Enrolled in these courses:</th></tr>

@@ -32,7 +32,7 @@
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
-        <div>
+        <div class="mainContent">
             <h2>Class Details</h2>
             <table>
                 <th>Students Enrolled:</th>

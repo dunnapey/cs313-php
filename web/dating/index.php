@@ -23,7 +23,7 @@
             <img src="assets/love1.png" alt="kiss">
         </div>
 
-        <div id="intro">
+        <div class="mainContent">
             <h2>Dating Coaching Services</h2>
             <p>
                 MakeItGreat.com is here to help you develop your relationships and love-life so that you can truly enjoy yourself and those you devote your time and self to.
@@ -38,6 +38,7 @@
                 ** Disclaimer: We do not offer full therapy services. Our instructors (dating coaches) are qualified to teach dating and relationship-building principles and offer suggestions to couples seeking help in their relationships. Our advice is offered based on the principles taught in our courses but is not a guarantee of success through their application nor a guarantee of our instructors being able to help your relationship.
             </p>
         </div>
+        
         <div id="kiss2">
             <img src="assets/love1.png" alt="kiss">
         </div>
