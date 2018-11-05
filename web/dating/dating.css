@@ -99,7 +99,7 @@ html, body {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #main div.mainContent h2 { text-align: center; }
