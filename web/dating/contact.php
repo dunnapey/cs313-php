@@ -21,7 +21,7 @@
     <div id="main">
         <div>
             <a href="mailto:pjdunnaway@sbcglobal.net">
-                <img src="assets/email.png" id="email">Email Us
+                <img src="assets/email.png" id="email"><p>Email Us</p>
             </a>
         </div>
 
@@ -42,7 +42,7 @@
 
         <div>
             <a href="tel:555-555-5555">
-                <img src="assets/phone.png" id="phone">Call Us
+                <img src="assets/phone.png" id="phone"><p>Call Us</p>
             </a>
         </div>
     </div>
