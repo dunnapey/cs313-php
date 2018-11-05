@@ -20,8 +20,9 @@
 
     <div id="main">
         <div>
-            <img src="assets/email.png" id="email">
-            <a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a>
+            <a href="mailto:pjdunnaway@sbcglobal.net">
+                <img src="assets/email.png" id="email">Email Us
+            </a>
         </div>
 
         <div>
@@ -40,8 +41,9 @@
         </div>
 
         <div>
-            <img src="assets/phone.png" id="phone">
-            <a href="tel:555-555-5555">Call Us</a>
+            <a href="tel:555-555-5555">
+                <img src="assets/phone.png" id="phone">Call Us
+            </a>
         </div>
     </div>
 
