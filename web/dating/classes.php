@@ -24,13 +24,13 @@
     <?php require 'header.php'; ?>
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
-    <h2>Classes Available</h2>
     <div id="main">
         <div id="dating1">
             <img src="assets/dating1.jpg">
         </div>
 
         <div class="mainContent">
+            <h2>Classes Available</h2>
             <ul>
                 <?php
                     foreach ($classes as $class) {
