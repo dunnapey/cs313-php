@@ -20,17 +20,28 @@
 
     <div id="main">
         <div>
-            <img src="assets/email.png">
+            <img src="assets/email.png" id="email">
+            <a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a>
         </div>
 
         <div>
             <h2>Contact Us</h2>
-            <a href="mailto:pjdunnaway@sbcglobal.net">Email Us</a><br>
-            <a href="tel:555-555-5555">Call Us</a>
+            <p>
+                For private session appointments or for questions, please call or email us at the links below. We look forward to working with you to improve your dating and marriage relationships!
+            </p>
+            <p>
+                Thank you for visiting!
+            </p>
+            <br>
+            <p>
+                ~ Peyton Dunnaway, <b>Site Manager</b>
+            </p>
+            <br>
         </div>
 
         <div>
-            <img src="assets/phone.png">
+            <img src="assets/phone.png" id="phone">
+            <a href="tel:555-555-5555">Call Us</a>
         </div>
     </div>
 
