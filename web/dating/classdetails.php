@@ -33,6 +33,12 @@
     <script type="text/javascript">document.getElementById("classes").className = "active";</script>
 
     <div id="main">
+        <div>
+            <?php
+                require 'classdesc.php';
+            ?>
+        </div>
+
         <div class="mainContent">
             <h2>Class Details</h2>
             <table>
@@ -52,6 +58,10 @@
             </table><br>
             <?php if ($enrollFail == true) echo "<p style='color: red'>* You're already registered for this course!</p>"; ?>
             <a id="register" href="enroll.php?id=<?php echo $id; ?>">REGISTER FOR THIS CLASS</a>
+        </div>
+
+        <div>
+            <img src="assets/dating2.png" style="width: 500px;">
         </div>
     </div>
 
