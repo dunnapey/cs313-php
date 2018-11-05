@@ -233,7 +233,7 @@ input[type = submit] {
     margin: 20px;
     opacity: .8;
     width: auto;
-    max-width: 400px;
+    max-width: 800px;
     align-self: center;
 }
 
